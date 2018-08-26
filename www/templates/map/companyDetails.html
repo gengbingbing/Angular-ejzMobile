@@ -1,0 +1,56 @@
+<ion-scroll>
+<div class="search_right"> 
+
+<div class="padding White">
+    <div class="des_top">
+     <img src="{{company2.photo}}"  class="person_photo_img03 fal_left">
+      <span class="des_name">
+        <i>名称：{{company2.username}}</i>        
+        <i>评分：{{company2.desginScore}}</i>
+        <i><a class="icon01 blue fal_left" ng-click="makeAppointment(company2,0)">{{company2.state}}</a></i>
+      </span>
+    </div>
+
+   <!-- <div class="des_intro04">
+     <span ng-click="showHide(1)">首页</span>|
+     <span ng-click="showHide(2)">公司简介</span>|
+     <span ng-click="showHide(3)">装修案例</span>|
+     <span ng-click="showHide(4)">设计团队</span>|
+     <span ng-click="showHide(5)">公司资质</span>|
+      
+    </div> --> 
+  <div class="des_intro02" >
+        <p>公司简介</p>
+            <span class="font-size12">{{company2.instruction}}</span>
+  </div>  
+  <div class="des_intro02" >
+    <p>装修案例</p>
+      <ul class="housetype" >
+        <li><img src="{{company2.works.img1 || 'images/upload.jpg'}}" ></li>
+        <li><img src="{{company2.works.img1 || 'images/upload.jpg'}}" ></li>
+        <li><img src="{{company2.works.img1 || 'images/upload.jpg'}}" ></li>
+      </ul>
+     
+  </div>
+
+  <div class="des_intro02" >
+    <p>设计团队</p>
+    <ul class="housetype">
+        <li><img src="{{company2.works.img1 || 'images/upload.jpg'}}" ></li>
+        <li><img src="{{company2.works.img1 || 'images/upload.jpg'}}" ></li>
+        <li><img src="{{company2.works.img1 || 'images/upload.jpg'}}" ></li>
+
+    </ul>
+  </div>
+
+
+   <div class="des_intro02" >    
+    <p>公司资质</p>   
+    <ul class="housetype">
+        <li><img src="{{company2.works.img1 || 'images/upload.jpg'}}" ></li>
+        <li><img src="{{company2.works.img1 || 'images/upload.jpg'}}" ></li>
+        <li><img src="{{company2.works.img1 || 'images/upload.jpg'}}" ></li>
+    </ul>
+   </div>
+</div>
+</ion-scroll>

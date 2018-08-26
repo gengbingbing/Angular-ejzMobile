@@ -1,0 +1,32 @@
+
+<ion-view view-title="修改密码" ng-controller="modifyPwdCtrl" ng-init="initData()">
+
+<ion-nav-bar class="bar-positive">
+    <ion-nav-back-button class="button-icon ion-chevron-left"></ion-nav-back-button>
+</ion-nav-bar> 
+
+<ion-content class="botm56" style="padding: 10px;" has-bouncing="false">
+
+    <div class="yzm_div">
+      <p class="yzm_span">请先输入旧密码以确认身份，再输入新密码来替换旧密码</p>
+       <div class="list padding">
+          <label class="item item-input ">
+            <input type="text" placeholder="旧密码"  ng-model="user.password" >
+          </label>
+          <label class="item item-input ">
+            <input type="password" placeholder="新密码"  ng-model="user.newpwd" >
+          </label>
+          <label class="item item-input ">
+            <input type="password" placeholder="确认新密码"  ng-model="user.renewpwd" >
+          </label>
+       </div>
+      </label>
+    </div>
+    <span class="">
+      <a href="" class="button button-block button-positive02" ng-click="updatePwd()">下一步 </a>
+    </span>
+
+</ion-content>
+
+<ng-include src="'templates/public_bottom.html'"></ng-include>
+</ion-view>

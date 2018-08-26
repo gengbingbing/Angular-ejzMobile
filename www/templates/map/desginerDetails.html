@@ -1,0 +1,37 @@
+<ion-scroll>
+<div class="search_right" > 
+       <div class="padding">
+               <img src="{{desginer2.photo}}"  class="person_photo_img03 fal_left">
+              <span class="des_name">
+                <i>姓名：{{desginer2.realname}}</i>
+                <i>等级：{{desginer2.type}}</i>
+                <i>收费：<span>{{desginer2.desginCost}}</span></i>
+                <i>评分：{{desginer2.desginScore}}</i>
+                <!-- <i ng-click="roomReservations()" desginer>{{decorcompany.state}}</i> -->
+                <div ng-click="makeAppointment(desginer2,1)" class="icon01 blue fal_left">{{desginer2.state}}</div>
+              </span>
+
+          <div class="des_intro">
+            <p>个人简介 </p>
+            <span>                                                                                       
+                   {{desginer2.introduction}}
+            </span>
+          </div>
+          <div class="des_intro">
+            <p>擅长风格 </p>
+            <a href="">现代</a><a href="">现代</a><a href="">现代</a><a href="">现代</a><a href="">现代</a><a href="">现代</a>
+          </div>
+          <div class="des_img">
+            <p>设计作品 </p>
+            <div class="des_intro02">
+              <ul class="housetype">
+                <li> <a href=""><img src="{{desginer2.works.img1}}" ></a></li>
+                <li><a href=""><img src="{{desginer2.works.img2}}" ></a></li>
+                <li><a href=""><img src="{{desginer2.works.img3}}" ></a></li>
+              </ul>
+            </div> 
+        </div>
+
+     </div>
+</div> 
+</ion-scroll>

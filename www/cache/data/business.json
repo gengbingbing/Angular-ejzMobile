@@ -1,0 +1,35 @@
+[
+{
+"username" : "shangjia1",
+"password" : "123456",
+"realname" : "商家A",
+"logo":"商家",
+"age" : "33",
+"photo" : "cache/img/000.jpg",
+"url" : "http://www.baidu.com",
+"position" : {"lng" : "108.881114", "lat" : "34.254632"},
+"group_id" : "3"
+},
+{
+"username" : "shangjia2",
+"password" : "123456",
+"realname" : "商家B",
+"logo":"商家",
+"age" : "45",
+"photo" : "cache/img/001.jpg",
+"url" : "http://www.hao123.com",
+"position" : {"lng" : "108.857316", "lat" : "34.272132"},
+"group_id" : "3"
+},
+{
+"username" : "shangjia3",
+"password" : "123456",
+"realname" : "商家C",
+"logo":"商家",
+"age" : "40",
+"photo" : "cache/img/002.jpg",
+"url" : "http://www.github.com",
+"position" : {"lng" : "109.028972", "lat" : "34.294155"},
+"group_id" : "3"
+}
+]

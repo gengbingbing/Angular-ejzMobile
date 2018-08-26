@@ -1,0 +1,26 @@
+<!--邀请监理-->
+<!-- <ion-refresher
+  pulling-text="下拉刷新..."
+  on-refresh="doRefresh()">
+</ion-refresher> -->
+<ion-refresher pulling-text="刷新中......" on-refresh="vm.doRefresh()"></ion-refresher>
+<ion-slide >
+<div class="title2"><a class="title" >邀请监理</a></div>
+  <div class="padding ">
+
+       <ul class="list">
+       <li class="item" ng-repeat="sup in supervision" supervision1>
+           <a class="fal_left"><img src="{{sup.img}}" class="person_photo_img02">
+           </a>
+           <p class="fal_left invit_information" >
+            <span> 监理: <i>{{sup.name}}</i></span>
+            <span> 等级:<i> {{sup.type}}</i></span>
+            <span> 监理宣言：<i>{{sup.introduction}} </i></span>
+           </p>
+       </li>
+     </ul>
+ </div>
+    <!-- ion-infinite-scroll 上拉加载数据指令 distance默认1% nf-if的值为false时，就禁止执行on-infinite  -->
+    <ion-infinite-scroll ng-if="vm.moredata" on-infinite="vm.loadMore()" distance="1%" ></ion-infinite-scroll>
+ </ion-infinite-scroll>
+</ion-slide>

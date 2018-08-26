@@ -1,0 +1,72 @@
+ <!-- 装修信息 -->
+ <div class="title2"><a class="title" >装修信息</a></div>
+<div class="list padding" >
+   <!-- 风格 -->
+   <div class="item item-divider item_line" >
+     {{DecorationInfo[0].HouseData.decorateStyle.name}}: {{ postdata.HouseInfo.decorateStyle || '未选择' }}
+    </div>    
+   
+   <label class="item item-radio radiocss" ng-repeat="item in DecorationInfo[0].HouseData.decorateStyle.Data">
+     <input   type="radio" 
+              ng-value="item.text"
+              ng-model="postdata.HouseInfo.decorateStyle" >
+        <div class="item-content"> 
+            {{ item.text }}
+        </div>
+        <i class="radio-icon ion-checkmark"></i>
+   </label>
+   
+   <!-- 装修预算 -->
+   <div class="item item-divider item_line" >
+     {{DecorationInfo[0].HouseData.budget.name}}: {{ postdata.HouseInfo.budget || '未选择' }}
+   </div>
+   
+   <label class="item item-radio radiocss" ng-repeat="item in DecorationInfo[0].HouseData.budget.Data">
+              <input  type="radio"
+                      ng-value="item.text"
+                      ng-model="postdata.HouseInfo.budget" >
+     <div class="item-content"> 
+            {{ item.text }}
+     </div>
+        <i class="radio-icon ion-checkmark"></i>
+   </label>
+   
+   <!-- 房屋情况 -->
+   <div class="item item-divider item_line" > 
+     {{DecorationInfo[0].HouseData.situation.name}}: {{ postdata.HouseInfo.situation || '未选择' }}
+   </div>
+   
+   <label class="item item-radio radiocss" ng-repeat="item in DecorationInfo[0].HouseData.situation.Data">
+             <input   type="radio" 
+                      ng-value="item.text"
+                      ng-model="postdata.HouseInfo.situation" >
+     <div class="item-content"> 
+          {{ item.text }}
+     </div>
+        <i class="radio-icon ion-checkmark"></i>
+   </label>
+
+   <div class="clicke_a.span">
+    <span class="clicke_a">
+    <a ng-click="masklayerClickT('templates/main/houseInfoTem.html')" class="last_a"> 上一步</a> 
+    <!-- <a ng-click="masklayerClick('templates/main/desginRequirements.html')" class="next_a">下一步</a> -->
+    <a ng-click="masklayerClick('templates/main/desginRequirements.html')" class="next_a">下一步</a>
+  </span>
+  </div>
+</div>
+
+<!-- 添加邀请 -->
+
+
+<!-- 
+           
+      <label class="item item-radio"  style="width: 50%;float: left;" ng-repeat="item in DecorationInfo[0].HouseData.HouseType.Data">
+        <input type="radio"
+               ng-value="item.value" 
+               ng-model="postdata.HouseInfo.HouseType">
+          <div class="item-content"> 
+            {{ item.text }}
+          </div>
+        <i class="radio-icon ion-checkmark"></i>
+      </label>
+  -->

@@ -1,0 +1,35 @@
+<!--邀请装修公司-->
+
+<ion-slide >
+<div class="title2"><a class="title" >邀请装修公司</a></div>
+<div class="padding padding_top">
+    <ul>
+      <li class="list invit_work_show" ng-show="typeAC"> 
+        <a ><img src="{{companyElemOne.decorateCase.img1}}" class="person_photo_img02 fal_left"> <a> 
+        <span class="invit_name_intro"><i>{{companyElemOne.name}}</i><i>{{companyElemOne.telephone}}</i></span>
+        <a class="inivt_tip01" ng-click="companySure(1)">中标</a>
+        <a class="inivt_tip02" ng-click="eliminateCompany(1)">淘汰</a>
+        <a class="invit_desing_show" ><img src="{{companyElemOne.works.img1}}"> </a>
+      </li>
+      <a ng-hide="typeBC" class="invit_desing_show" ng-click="masklayerClick('companyElemOne')"><img src="images/upload02.jpg"> </a>
+
+      <li class="list invit_work_show" ng-show="typeCC"> 
+        <a><img src="{{companyElemTwo.decorateCase.img1 }}" class="person_photo_img02 fal_left"> <a> 
+        <span class="invit_name_intro"><i>{{companyElemTwo.name || "暂无数据"}}</i><i>{{desginElemTwo.telephone || "暂无数据"}}</i></span>
+        <a class="inivt_tip01" ng-click="companySure(2)">中标</a>
+        <a class="inivt_tip02" ng-click="eliminateCompany(2)">淘汰</a>
+        <a class="invit_desing_show"><img src="{{companyElemTwo.works.img1}}"></a>
+      </li>
+      <a ng-hide="typeDC" class="invit_desing_show" ng-click="masklayerClick('companyElemTwo')"><img src="images/upload02.jpg"> </a>
+
+      <li class="list invit_work_show"  ng-show="typeEC"> 
+        <a><img src="{{companyElemThree.decorateCase.img1}}" class="person_photo_img02 fal_left"> <a> 
+        <span class="invit_name_intro"><i>{{companyElemThree.name || "暂无数据"}}</i><i>{{companyElemThree.telephone || "暂无数据"}}</i></span>
+        <a class="inivt_tip01" ng-click="companySure(3)">中标</a>
+        <a class="inivt_tip02" ng-click="eliminateCompany(3)">淘汰</a>
+        <a class="invit_desing_show"><img src="{{companyElemThree.works.img1}}"> </a>
+      </li>
+      <a ng-hide="typeFC" class="invit_desing_show" ng-click="masklayerClick('companyElemThree')"><img src="images/upload02.jpg"> </a>
+    </ul>
+</div>
+</ion-slide > 

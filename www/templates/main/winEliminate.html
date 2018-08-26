@@ -1,0 +1,51 @@
+<!--邀请设计师-->
+
+<ion-slide >
+<div class="title2"><a class="title" >邀请设计师</a></div>
+<div class="padding">
+      <div class=" invit_work_show" ng-show="typeA"> 
+        <a class="fal_left" >
+          <img src="{{desginElemOne.img}}" class="person_photo_img03 "> 
+        </a> 
+
+        <span class="invit_name_intro">
+          <i>{{desginElemOne.name || "暂无数据"}}</i>
+          <i class="font-size12">{{desginElemOne.type || "暂无数据"}}</i>
+        </span>
+
+       <span class="fal_left">
+         <p class="invit_show_p">
+          <a class="inivt_tip01" ng-click="desginCost(1)">中标</a>
+          <a class="inivt_tip02" ng-click="eliminateDesginer(1)">淘汰</a>
+         </p> 
+       </span>
+
+        <a class="invit_desing_show" >
+          <img src="{{desginElemOne.works.img1}}"> 
+        </a>
+      </div>
+
+      <a ng-hide="typeB" class="invit_desing_show" ng-click="masklayerClick('desginElemOne')"> <img src="images/upload02.jpg"> </a>
+
+      <div class="list invit_work_show" ng-show="typeC"> 
+
+      <a class="fal_left" ><img src="{{desginElemTwo.img}}" class="person_photo_img03 "> </a> 
+        <span class="invit_name_intro"><i>{{desginElemTwo.name || "暂无数据"}}</i><i class="font-size12">{{desginElemTwo.type || "暂无数据"}}</i></span>
+        <a class="inivt_tip01" ng-click="desginCost(2)">中标</a>
+        <a class="inivt_tip02" ng-click="eliminateDesginer(2)">淘汰</a>
+        <a class="invit_desing_show"><img src="{{desginElemTwo.works.img1}}"></a>
+      </div>
+      
+      <a ng-hide="typeD" class="invit_desing_show" ng-click="masklayerClick('desginElemTwo')"><img src="images/upload02.jpg"> </a>
+
+      <div class="list invit_work_show"  ng-show="typeE"> 
+         <a class="fal_left" ><img src="{{desginElemThree.img}}" class="person_photo_img03 "> </a> 
+         
+        <span class="invit_name_intro"><i>{{desginElemThree.name || "暂无数据"}}</i><i class="font-size12">{{desginElemThree.type || "暂无数据"}}</i></span>
+        <a class="inivt_tip01" ng-click="desginCost(3)">中标</a>
+        <a class="inivt_tip02" ng-click="eliminateDesginer(3)">淘汰</a>
+        <a class="invit_desing_show"><img src="{{desginElemThree.works.img1}}"> </a>
+      </div>
+      <a ng-hide="typeF" class="invit_desing_show" ng-click="masklayerClick('desginElemThree')"><img src="images/upload02.jpg"> </a>
+</div>
+</ion-slide >

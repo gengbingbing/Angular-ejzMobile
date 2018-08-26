@@ -1,0 +1,22 @@
+<ion-view view-title="邀请设计师" ng-controller="invitdesginCtrl"  ng-init="initData()">
+  <ion-nav-bar class="bar-positive">
+      <ion-nav-back-button class="button-icon ion-chevron-left"></ion-nav-back-button>
+  </ion-nav-bar> 
+  <ion-content >
+          <div class="padding padding_t30">
+                <ul class="list">
+                    <li class="item" ng-repeat="invit in invitdesgin"> 
+                        <a href="" class="fal_left" ><img src="images/photo_img.png" class="person_photo_img"></a>
+                        <p class="fal_left invit_information" >
+                          <span> 设计师:<i>fa</i></span>
+                          <span> 等级:<i>fafd </i></span>
+                          <span> 从业经验:<i>afafdas</i>年</span>
+                        </p>
+                        <a href="#/main/invitteam" class="invit_icon">预约量房</a>
+                    </li>
+                </ul>
+          </div>
+  </ion-content>
+  <ng-include src="'templates/public_bottom.html'"></ng-include>
+</ion-view>
+

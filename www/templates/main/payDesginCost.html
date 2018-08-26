@@ -1,0 +1,15 @@
+<ion-slide >
+<div class="title2"> <a href="">支付设计费详情</a><a class="modalClose" ng-click="closeTemplate2()">关闭</a></div>
+    <ul class="height White">
+      <li>
+        <div class="l_img ">
+          <div class="padding ">
+              <span class="font-size12" >支付设计费是为确保本次任务真实有效，其中保证金可冲抵部分设计费。</span>
+              <span class="pay" >
+              设计费：{{postdata.HouseInfo.designCost * postdata.HouseInfo.space}}元 - 保证金：{{bond.price}}元={{postdata.HouseInfo.designCost * decorate.space.val-bond.price}}元</span>
+             <a class="pay_icon magrin_t20"  ng-click="desginerCost()">支付 </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+</ion-slide >

@@ -1,0 +1,36 @@
+<!--设计要求-->
+<ion-slide>
+ <div class="title2"><a class="title" >{{DecorationInfo[0].HouseData.requirements.name}}</a></div>
+<div class="padding">
+<div class="item item_line">
+  <textarea class="textarea_desgin" 
+            placeholder="说明您对风格的喜好和偏爱，对装修品质及材料品牌的要求，对设计。装修时间的要求等" 
+            ng-model="postdata.HouseInfo.requirements">
+  </textarea>
+</div>
+
+
+<div class="item  item_line_input ">
+  <span class="person_list__span">上传户型图 </span>    
+    <a href="" class="person_list_a02 "> 
+      <span class=" person_span_left"><img src="images/upload.jpg" class="person_photo_img60" ng-click="modifyPhoto()"></span>
+    </a>  
+  </span>
+</div>
+<div class="item  item_line_input ">
+  <span class="person_list__span">上传参考图 </span>
+  <a href="" class="person_list_a02  " > 
+  <span class=" person_span_left">
+    <img src="images/upload.jpg" class="person_photo_img60" ng-click="modifyPhoto()">
+    <img src="images/upload.jpg" class="person_photo_img60" ng-click="modifyPhoto()">
+    <img src="images/upload.jpg" class="person_photo_img60" ng-click="modifyPhoto()">
+  </span> 
+  </a>  
+</div>
+ <span class="clicke_a">
+  <a ng-click="masklayerClickT('templates/main/decorateRequirements.html')" class="last_a"> 上一步</a>
+  <!-- <a ng-click="masklayerClick('templates/main/decorationRequirementsTem.html')" class="next_a">下一步</a> -->
+  <a ng-click="masklayerClick('templates/main/decorationRequirementsTem.html')" class="next_a">下一步</a>
+</span>
+</div>
+</ion-slide>

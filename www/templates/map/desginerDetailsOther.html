@@ -1,0 +1,36 @@
+<ion-content class="margin10">
+<div class="title2">设计师详情<a a class="modalClose" ng-click="masklayerClick2()">关闭</a></div>
+<div class="padding "> 
+      <ul class="list " >
+      <li>
+             <img src="{{desginer2.photo}}"  class="person_photo_img03 fal_left">
+              <span class="des_name">
+                <i>姓名：{{desginer2.realname}}</i>
+                <i>等级：{{desginer2.type}}</i>
+                <i>收费：<span>{{desginer2.desginCost}}</span></i>
+                <i>评分：{{desginer2.desginScore}}</i>
+                <!-- <i ng-click="roomReservationds()" desginer>{{decorcompany.state}}</i> -->
+                <i ng-click="makeAppointment(desginer2,1)"  class="icon01 blue fal_left">{{desginer2.state}}</i>
+              </span>
+        </li>
+          <div class="des_intro">
+            <p>个人简介 </p>
+            <span>
+                   {{desginer2.introduction}}
+            </span>
+          </div>
+          <div class="des_intro">
+            <p>擅长风格 </p>
+            <a href="">现代</a><a href="">现代</a><a href="">现代</a><a href="">现代</a><a href="">现代</a><a href="">现代</a>
+          </div>
+          <div class="des_img">
+            <p>设计作品 </p>
+            <a href=""><img src="{{desginer2.works.img1}}" ></a>
+            <a href=""><img src="{{desginer2.works.img2}}" ></a>
+            <a href=""><img src="{{desginer2.works.img3}}" ></a>
+          </div>
+      </li>
+    </ul>
+</div> 
+</ion-content>
+

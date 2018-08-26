@@ -1,0 +1,85 @@
+  <!--装修信息-->
+ 
+ <ion-slide >
+    <div class="title2">
+      <a class="title" >装修信息</a>
+    </div>
+    <div class="list padding">
+      <!-- 房型 -->
+      <div class="item item-divider item_line"> 
+        {{DecorationInfo[0].HouseData.HouseType.name}}: {{ postdata.HouseInfo.HouseType || '未选择' }}
+      </div>
+      
+      <label class="radiocss item item-radio" ng-repeat="item in DecorationInfo[0].HouseData.HouseType.Data" >
+        <input type="radio"
+               ng-value="item.value" 
+               ng-model="postdata.HouseInfo.HouseType">
+          <div class="item-content"> 
+            {{ item.text }}
+          </div>
+        <i class="radio-icon ion-checkmark"></i>
+      </label>
+ 
+      <!-- 装修类型 -->
+      <div class="item item-divider item_line"> 
+       {{DecorationInfo[0].HouseData.DecorationType.name}}: {{ postdata.HouseInfo.DecorationType || '未选择' }}
+      </div>
+ 
+      <label class="radiocss item item-radio" ng-repeat="item in DecorationInfo[0].HouseData.DecorationType.Data">
+        <input  type="radio"
+                ng-value="item.value"
+                ng-model="postdata.HouseInfo.DecorationType" >
+          <div class="item-content"> 
+            {{ item.text }}
+          </div>
+          <i class="radio-icon ion-checkmark"></i>
+      </label>
+          <!-- 省市区  ng-change()向后台传值-->
+          <div class="item item_line" style="border-bottom:none"> 
+               <div class="address_select">
+                {{DecorationInfo[0].HouseData.name.province + "/" + DecorationInfo[0].HouseData.name.city + "/" + DecorationInfo[0].HouseData.name.area}}
+                <select id="country" ng-model="country" ng-options="country.text for country in DecorationInfo[0].HouseData.place" ng-change="place(country, 1)" class="select_can">
+                    <option value="">{{countryName}}</option>       
+                </select>
+
+                <select id="city" ng-model="city" ng-options="city.text for city in country.value" ng-change="place(city, 2)" class="select_can">
+                    <option value="">{{cityName}}</option>       
+                </select>
+                
+                <select id="area" ng-model="area" ng-options="area.text for area in city.value" ng-change="place(area, 3)" class="select_can">
+                  <option value="">{{areaName}}</option>
+                </select>        
+              </div>
+     
+
+      <!-- 小区 -->
+      <div class="item item-divider item_line">  
+        {{DecorationInfo[0].HouseData.house.name}}
+      </div>
+      <house-complete></house-complete>
+      <!-- 面积 -->
+      <div class="item item-divider item_line"> 
+       {{DecorationInfo[0].HouseData.house.space}} ：{{postdata.HouseInfo.space}}㎡
+      </div> 
+      <label class="item item-input item_line_input">
+        <input type="text" placeholder="请输入房屋面积" ng-model="postdata.HouseInfo.space" ng-blur="inputSpaceDone()" >
+      </label>  
+ 
+      <!-- 户型 -->
+      <div class="item item-divider item_line"> 
+        {{DecorationInfo[0].HouseData.units.name}}: {{ postdata.HouseInfo.units || '未选择' }}
+      </div>
+ 
+      <label class="radiocss item item-radio" ng-repeat="item in DecorationInfo[0].HouseData.units.Data" >
+              <input  type="radio"
+                      ng-value="item.value"
+                      ng-model="postdata.HouseInfo.units">
+                 <div class="item-content">
+                  {{ item.text }}
+                 </div>
+                 <i class="radio-icon ion-checkmark"></i>
+      </label>
+ 
+      <span class=""><a ng-click="masklayerClick('templates/main/decorateRequirements.html')" class="clicke_abig">下一步</a></span>
+  </div>
+ </ion-slide >

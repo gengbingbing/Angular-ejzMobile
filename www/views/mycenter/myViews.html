@@ -1,0 +1,146 @@
+<ion-view view-title="我的信息" ng-controller="myCtrl" ng-init="initData()">
+
+	<ion-nav-bar class="bar-positive">
+	    <ion-nav-back-button class="button-icon ion-chevron-left"></ion-nav-back-button>
+	</ion-nav-bar> 
+
+
+
+	<ion-content  class="person_content">
+	  <!--个人信息主体-->
+	  <div class="person_block magrin_t20">
+			<ul class="list ">
+				<li class="item item_icon_d ">
+					<a href="#/mycenter/personinfor" class="person_list_a02 " > 
+						<span class=" person_span_left">
+						<img src="{{userData.photo || 'images/photo_img.png'}}" class="person_photo_img"></span><span class="person_list__span">用户名：{{userData.username}}  </span> 
+					</a>	
+				</li>
+			</ul>
+	   </div>
+
+	   <div class="person_block magrin_t20">
+			<ul class="list ">
+				
+				<li class="item item_icon_d">
+					<!-- <a class="person_list_a " ng-click="myProgress()">  -->
+					<a class="person_list_a " ng-click="myProgress()" href=""><!-- #/main/index -->
+						<i class="ion-refresh"></i><span class="person_list__span">我的装修进度 </span> 
+					</a>
+				</li>
+				
+				<li class="item item_icon_d">
+					<a href="#/mycenter/collect" class="person_list_a"> 
+					<i class="ion-hammer"></i><span class="person_list__span">收藏 </span>
+					</a>
+				</li>
+				
+			</ul>
+	   </div>
+
+	   <div class="person_block magrin_t20">
+			<ul class="list ">
+				
+				<li class="item item_icon_d">
+					<a class="person_list_a " ng-click="openEJB()"> 
+						<i class="ion-social-usd"></i><span class="person_list__span">易家保（装修在线安全支付平台） </span> 
+					</a>
+				</li>
+				
+				<li class="item item_icon_d">
+					<a  class="person_list_a " ng-click="openCoupons()"> 
+					<i class="ion-pricetags"></i><span class="person_list__span">优惠劵 </span>
+					</a>
+				</li>
+				<li class="item item_icon_d">
+					<a class="person_list_a" ng-click="myAdvisor()">
+					<!-- <a class="person_list_a" href="http://192.168.1.184:8089/> -->
+					<i class="ion-ios-chatbubble"></i><span class="person_list__span">我的顾问 </span>
+					</a>
+				</li>
+
+				<li class="item">
+				
+					<a class="" href="tel:400-004-5369"><i class="ion-ios-telephone"></i><span class="person_list__span">联系我们 </span></a>
+					<!-- <div style="float:right; margin-right='5px'">8:30AM ~ 6:00PM</div> -->
+				</li>
+			</ul>
+	   </div>
+
+	   <div class="person_block magrin_t20">
+			<ul class="list ">
+				<li class="item">
+					<a  href="" class="person_list_a" ng-click="agreeItems()"> 
+					<i class="ion-clipboard"></i><span class="person_list__span">服务条款</span>
+					</a>
+				</li>
+				
+				<li class="item item_icon_d ">
+					<a  href="" class="person_list_a" ng-click="set()"> 
+					<i class="ion-gear-a"></i><span class="person_list__span">设置 </span>
+					</a>
+				</li>
+
+				<li class="item item_icon_d ">
+					<a  href="" ng-click="Test()" class="person_list_a"> 
+					<i class="ion-email-unread"></i><span class="person_list__span">消息列表测试 </span>
+					</a>
+				</li>
+			</ul>
+	   </div>  
+	</ion-content>
+	
+	<div id="aa" style="display:none;" class="modal-backdrop active {{masklayerShowHideClass}}">
+	  <div class="bg" masklayer></div>
+	  <div class="show animated  bounceInRight bounceOutRight {{masklayerSignOut}}" style="top:0px;left:0px;right:0px;min-height:100%;width:100%;">
+
+		<ion-header-bar class="bar-positive bar bar-header disable-user-behavior">
+	        <h1 class="title ng-binding"><a class="modalClose" ng-click="hide()">关闭</a>我的顾问</h1>
+	    </ion-header-bar>
+	    <ion-content class="scroll-content ionic-scroll  has-header"> 
+			<div class='container login' style="background-color:rgb(131, 131, 131)">
+			<form action="#/mycenter/myAdvisor" method="get" class="well" style="height: 162px">
+				<input id="name" type="text" name="name" value={{userData.username}} onfocus="this.value=''; this.onfocus=null">(您的昵称)</br> 
+					<input type="text" id="avatar" name="avatar" value={{'images/photo_img.png'}} onfocus="this.value=''; this.onfocus=null" onblur="showAvatar(this.value)">(头像URL)</br>
+				<input type="submit" class="btn btn-primary" value="Login" id="login_submit">  <!-- 登录按钮-->
+
+				<span style="color: green; padding-top: 10px;margin-left: 15px;" id="alert_msg"></span>
+			</form>
+			</div>
+	    </ion-content>
+	  </div>
+	</div>
+	
+	<div id="bb" style="display:none;" class="modal-backdrop active {{masklayerShowHideClass}}">
+	  	<div class="bg" masklayer></div>
+	  	<div class="show animated  bounceInRight bounceOutRight {{masklayerSignOut}}" style="top:0px;left:0px;right:0px;min-height: 100%;width: 100%;">
+			<ion-header-bar class="bar-positive bar bar-header disable-user-behavior">
+	        <h1 class="title ng-binding"><a class="modalClose" ng-click="hide()">关闭</a>消息</h1>
+	    </ion-header-bar>
+		    <ion-content class="scroll-content ionic-scroll  has-header">
+		       <div class="botm56">
+		        <ul class="list">
+		        <li class="item" ng-repeat="item in userimg" desginer2 ng-click="OpenMessage()">
+		        	<a class="fal_left"><img src="{{item.img}}" class="person_photo_img02"></a>
+		            <p class="fal_left invit_information" style="width: 70%; margin-top: 30px;">
+	            		<!-- <span style="font-size:18"> <b>我的顾问</b></span> -->
+		             	<span style="font-size:18"> <b>我的顾问({{item.username}}):</b> {{item.usermessage}}</span>
+		            </p>
+		        </li>
+
+		        <li class="item" ng-repeat="item in jpush" desginer2 ng-click="OpenMessage()">
+		        	<a class="fal_left"><img src="{{item.img}}" class="person_photo_img02"></a>
+		            <p class="fal_left invit_information" style="width: 70%;">
+		             <span> <i>{{item.username}}   {{item.usermessage}}</i></span>
+		            </p>
+		        </li>
+		      </ul>
+	    	</div>
+	    	<my-advisor></my-advisor>
+		    </ion-content>
+	  	</div>
+	</div>
+
+	<ng-include src="'templates/public_bottom.html'"></ng-include>
+</ion-view>
+

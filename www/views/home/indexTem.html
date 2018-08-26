@@ -1,0 +1,57 @@
+
+
+
+<ion-view view-title="高薪社区" ng-controller="HomeCtrl">
+
+
+  <ion-nav-buttons side="right">
+  <i class="icon ion-ios-calendar-outline" style="font-size: 24px; margin-right: 10px; margin-top: 5px; display: block; width: 40px; height: 40px; text-align: center" ng-click="dingwei()"></i>
+    <!-- <button class="button ion-location" ng-click="doSomething()">I'm </button> -->
+  </ion-nav-buttons>
+  <ion-nav-buttons side="left">
+   <i class="icon ion-ios-location-" style="font-size: px; margin-left: 10px;margin-top:2px; " ng-click="openModal()">
+      <span style="font-size: 14px; float: right; margin-top: 5px;margin-left: 5px;">陕西西安</span>
+
+  </i>
+   <!--  <button class="button ion-location" ng-click="doSomething()"></button> -->
+  </ion-nav-buttons>
+<!-- <ion-nav-bar class="bar-positive">
+    <ion-nav-back-button class="button-icon ion-arrow-left-c"></ion-nav-back-button>
+</ion-nav-bar> -->
+<!-- <div class="bar bar-header  bar-royal">
+         <a href="#/app/capture" class="button button-icon icon ion-gear-a"></a>
+         <h1 class="title">Header</h1>
+         <a href="#/app/playlists" class="button button-icon icon ion-heart"></a>
+ </div> -->
+
+      <ion-content class="padding">
+        <p>
+          <a class="button icon icon-right ion-chevron-right" href="#/tab/facts">Scientific Facts {{main}}</a>
+          <a class="button icon icon-right ion-chevron-right" ng-click="openModal()">FORM</a>
+        </p>
+		<ion-refresher pulling-text="Pull to refresh..." on-refresh="doRefresh()"></ion-refresher>
+		<ion-list>
+
+		{{main}}
+		  <a class="button icon icon-right ion-chevron-right" ng-click="takePicture()">2222222</a>
+		<input type="button" ng-click="takePicture()">222</a>
+			<img src="{{image}}">
+			<ion-item ng-repeat="item in items"></ion-item>
+		</ion-list>
+		<ion-slide-box on-slide-changed="slideHasChanged($index)">
+  <ion-slide>
+    <div class="box blue"><h1>BLUE</h1></div>
+  </ion-slide>
+  <ion-slide>
+    <div class="box yellow"><h1>YELLOW</h1></div>
+  </ion-slide>
+  <ion-slide>
+    <div class="box pink"><h1>PINK</h1></div>
+  </ion-slide>
+</ion-slide-box>
+		<span>shfsdfjsdjfkdshkfhdhskfhkhsd</span>
+
+		<ion-infinite-scroll on-infinite="loadMore()" distance="1%"></ion-infinite-scroll>
+	
+    </ion-content>
+</ion-view> 

@@ -1,0 +1,63 @@
+
+
+
+<ion-view view-title="注册" ng-controller="registerCtrl" ng-cloak>
+
+  <ion-header-bar align-title="left" class="bar-positive">
+    <div class="buttons">
+      <i class="icon ion-ios-location-outline" style="font-size: 24px; margin-left: 10px;margin-top: 5px; " ng-click="openModal()">
+        <span style="font-size: 14px; float: right; margin-top: 2px;margin-left: 5px;">陕西西安</span>
+      </i>
+    </div>
+    <h1 class="title">Title!</h1>
+    <div class="buttons">
+     
+      <i class="icon ion-ios-calendar-outline" style="font-size: 24px; margin-right: 10px; margin-top: 5px; display: block; width: 40px; height: 40px; text-align: center" ng-click="dingwei()"></i>
+    </div>
+  </ion-header-bar>
+
+
+
+<!-- <ion-nav-bar class="bar-positive">
+    <ion-nav-back-button class="button-icon ion-arrow-left-c"></ion-nav-back-button>
+</ion-nav-bar>  -->
+
+
+<!-- <div class="bar bar-header  bar-royal">
+            <a href="#/app/capture" class="button button-icon icon ion-gear-a"></a>
+            <h1 class="title">Header</h1>
+            <a href="#/app/playlists" class="button button-icon icon ion-heart"></a>
+        </div> -->
+
+  <ion-content class="padding">
+
+    <div class="list">
+      <label class="item item-input">
+        <input type="text" placeholder="监理/业主" ng-model="userinfo.group_id"  >
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="用户名"  ng-model="userinfo.user_name" >
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="密码" ng-model="userinfo.password"  >
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="确认密码" ng-model="userinfo.repassword"  >
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="手机号码" ng-model="userinfo.mobile"  >
+      </label>
+   
+      <a class="button button-block button-positive" ng-click="registClick()">
+       提交
+      </a>
+    </div>  
+    
+    <p>
+      <a class="button icon icon-right ion-chevron-right" href="#/home/index">index</a>
+      <a class="button icon icon-right ion-chevron-right" ng-click="openModal()">FORM</a>
+    </p>
+
+  </ion-content>
+
+</ion-view>

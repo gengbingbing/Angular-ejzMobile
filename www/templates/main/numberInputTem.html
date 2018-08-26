@@ -1,0 +1,16 @@
+
+<ion-modal-view ng-controller="decorateCtrl">
+  <ion-header-bar class="bar-positive">
+    <h1 class="title" >{{modalOptions.title || '装修需求'}}<a class="modalClose" ng-click="doneInput()">完成</a></h1>
+  </ion-header-bar>
+
+  <ion-content has-bouncing="false">
+      <div class="person_block magrin_t20">
+        <div class="item item-input ">
+          <input ng-model="modalOptions.txt" placeholder="请输入数字" style="IME-MODE: disabled;" onkeyup="this.value=this.value.replace(/\D/g,'')"  onafterpaste="this.value=this.value.replace(/\D/g,'')" maxlength="4" size="14" name="amount" type="text" /> 
+          <span class="persond ion-ios-close"  ng-click="clearInput()"></span>
+        </div>
+     </div>
+  </ion-content>
+
+</ion-modal-view>

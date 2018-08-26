@@ -1,0 +1,36 @@
+<!--装修要求-->
+<ion-slide>
+    <div class="title2">
+        <a class="title" >设计要求</a>
+    </div>
+    <div class="list padding " >
+        <!--姓名-->
+        <div class="item item-divider item_line"> 
+          {{DecorationInfo[0].HouseData.contactInfo.username}}
+        </div>
+        <label class="item item-input item_line_input">
+            <input type="text" placeholder="姓名"   ng-model="postdata.HouseInfo.username" ng-blur="inputName()" >
+        </label>  
+        <!--手机号码-->
+        <div class="item item-divider item_line"> 
+          {{DecorationInfo[0].HouseData.contactInfo.telephone}}
+        </div>
+        <label class="item item-input item_line_input">
+            <input type="text" placeholder="手机号码" ng-model="postdata.HouseInfo.telephone" ng-bind="checkPhone(postdata.HouseInfo.telephone)">
+        </label>  
+
+        <div class="item item-divider item_line" ng-show="validateCodeShow"> 
+          <button style="widht:30%; height:30px; font-size:14px; color:#333;">{{DecorationInfo[0].HouseData.contactInfo.checkCode}}</button>
+            <label class="item item-input item_line_input">
+                <input type="text" placeholder="验证码" ng-model="postdata.HouseInfo.checkCode" ng-blur="inputName()" >
+            </label>
+        </div>
+
+
+        <span class="clicke_a">
+            <a ng-click="masklayerClickT('templates/main/decorationRequirementsTem.html')" class="last_a"> 上一步</a> 
+                <!-- <a class="next_a" ng-click="masklayerClick('templates/main/evaluationDesginer.html')">发布 </a> </span>  -->
+           <a class="next_a" ng-click="masklayerClick('templates/main/payInfo.html')" >发布 </a> 
+       </span> 
+    </div>
+</ion-slide> 

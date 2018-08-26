@@ -1,0 +1,52 @@
+<!--装修要求-->
+ <div class="title2"><a class="title" >设计要求</a></div>
+<div class="list padding " >
+
+  <!--设计方式-->
+  <div class="item item-divider item_line" > 
+    {{DecorationInfo[0].HouseData.designModes.name}}: {{ postdata.HouseInfo.designModes || '未选择' }}
+  </div>
+
+  <label ng-repeat="item in DecorationInfo[0].HouseData.designModes.Data"  class="item item-radio radiocss">
+     <input  ng-value="item.text"
+             type="radio"
+             ng-click="showHide()"
+             ng-model="postdata.HouseInfo.designModes">
+    <div class="item-content"> 
+            {{ item.text }}
+    </div>
+        <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+
+
+   <p ng-hide="showTypeDe" class="font-size12 padding_tb10 fal_left">
+   免费设计是易家装平台为3个月内需要找装修公司装修的业主提供的一项免费服务，目前只针对房屋面积小于130平米的用户，为业主提供整套的效果图、施工图、设计说明和装修概算等，如果您在免费设计服务后没有使用易家装发布装修任务，那么您需要按标准补交设计费用。
+   </p>
+
+  <!--设计花费-->
+  <div ng-show="showType">
+  <div class="item item-divider item_line" > 
+    {{DecorationInfo[0].HouseData.designCost.name}}: {{ postdata.HouseInfo.designCost|| '未选择' }}
+  </div>
+  
+  <label ng-repeat="item in DecorationInfo[0].HouseData.designCost.Data"  class="item item-radio radiocss">
+     <input ng-value="item.text"
+            type="radio"
+            ng-model="postdata.HouseInfo.designCost" >
+     <div class="item-content"> 
+            {{ item.text }}
+     </div>
+        <i class="radio-icon ion-checkmark"></i>
+  </label>
+  <p class="font-size12 padding_tb10 fal_left">
+    您选择的付费区间不同，为您推荐的设计师或装修公司等级也将不同。
+  </p>
+  </div>
+
+  <span class="clicke_a ">
+    <a ng-click="masklayerClickT('templates/main/desginRequirements.html')" class="next_a">上一步</a>
+    <a ng-click="masklayerClick('templates/main/contactInfo.html')" class="last_a">下一步</a>
+  </span> 
+  </span>
+</div>

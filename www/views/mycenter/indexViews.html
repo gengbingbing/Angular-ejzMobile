@@ -1,0 +1,33 @@
+
+<ion-view view-title="登录" ng-controller="loginCtrl" ng-init="initData()">
+
+<ion-nav-bar class="bar-positive">
+    <ion-nav-back-button class="button-icon ion-chevron-left"></ion-nav-back-button>
+</ion-nav-bar> 
+<style>
+  .fal_left { float:left;}
+</style>
+
+<ion-content class="botm56" has-bouncing="false">
+    <div class="l_img "><img src="images/login_pic.jpg"></div>
+    <div class="list padding ovrflw">
+      <label class="item item-input ion-person">
+        <input type="text" placeholder="用户名/手机号"  ng-model="userData.username" >
+      </label>
+      <label class="item item-input ion-unlocked">
+        <input type="password" placeholder="密码" ng-model="userData.password" >
+      </label>
+      <p class="password_j"> 
+        <!-- <label class="checkbox" ng-click="memoryPwd()">
+          <input type="checkbox" class="fal_left" ng-checked="{{userData.memory}}"><i class="fal_left pass_world_m">自动登录</i>
+        </label> -->
+        <a href="#/mycenter/password" class="fal_left login_qustion login_a">找回密码 </a>
+        <a href="#/mycenter/register" class="fal_right reg_page login_a"> 新用户</a>
+      </p>
+      <button class="button button-block button-positive" ng-click="login()">登录</button>
+    </div>
+
+ </ion-content>
+
+<ng-include src="'templates/public_bottom.html'"></ng-include>
+</ion-view>

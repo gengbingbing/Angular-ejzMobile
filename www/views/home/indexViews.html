@@ -1,0 +1,120 @@
+
+
+
+<!-- <ion-view view-title="高薪社区" ng-controller="HomeCtrl" ng-cloak> -->
+
+
+ <!--  <ion-nav-buttons side="right">
+  <i class="icon ion-ios-calendar-outline" style="font-size: 24px; margin-right: 10px; margin-top: 5px; display: block; width: 40px; height: 40px; text-align: center" ng-click="dingwei()"></i>
+ 
+  </ion-nav-buttons>
+  <ion-nav-buttons side="left">
+   <i class="icon ion-ios-location-outline" style="font-size: 24px; margin-left: 10px;margin-top: 5px; " ng-click="openModal()">
+    <span style="font-size: 14px; float: right; margin-top: 2px;margin-left: 5px;">陕西西安</span>
+  </i>
+
+  </ion-nav-buttons> -->
+
+
+<!-- <ion-header-bar align-title="left" class="bar-positive" >
+  <div class="buttons">
+  <i class="icon ion-ios-location-outline" style="font-size: 24px; margin-left: 10px;margin-top: 5px; " ng-click="openModal()">
+    <span style="font-size: 14px; float: right; margin-top: 2px;margin-left: 5px;">陕西西安</span>
+  </i>
+
+  </div>
+  <h1 class="title">Title!</h1>
+  <div class="buttons">
+   
+   <i class="icon ion-ios-calendar-outline" style="font-size: 24px; margin-right: 10px; margin-top: 5px; display: block; width: 40px; height: 40px; text-align: center" ng-click="dingwei()"></i>
+  </div>
+</ion-header-bar>
+
+
+      <ion-content class="padding" > -->
+
+<!-- <div ng-cloak>
+  
+   <p>
+          <a class="button icon icon-right ion-chevron-right" href="#/accounts/index">login</a>
+          <a class="button icon icon-right ion-chevron-right" ng-click="openModal()">FORM</a>
+        </p>
+</div>
+ -->
+
+
+<!-- <div ng-init="point = { lat: 121.491, lng: 31.233 }">
+  <baidu-map center="point"></baidu-map>
+</div>
+ -->
+
+<div class="wrapper_map"  ng-controller="homeCtrl"  ng-init="initData">
+    <div class="map_search">
+      <slide-custom></slide-custom>
+      <position-auto></position-auto>
+    </div>
+    <baidu-map class="map" center="lng"></baidu-map>
+
+  <!-- 模板一 -->
+      <div class="modal-backdrop active {{masklayerShowHideClass}}"  >
+    <div class="bg" masklayer></div>
+    <div class="show animated  bounceInRight bounceOutRight {{masklayerSignOut}}" style="top:0px;right:0px;min-height: 100%;width: 79%;">
+      <ion-content class="scroll-content ionic-scroll  has-header "style="margin-top:0px">
+          <div ng-include="DynamicTem"></div>
+      </ion-content>
+    </div>
+  </div>
+
+  <!-- 模板二 -->
+  <div class="active {{masklayerShowHideClass2}}"  >
+    <!-- <div class="bg" masklayer></div> -->
+    <div class="show animated  bounceInUp bounceOutDown {{masklayerSignOut2}}" style="top:0px;left:0px;right:0px;min-height: 100%;width: 100%;">
+      <ion-content class="scroll-content ionic-scroll  has-header" style="margin-top:0px">
+          <div ng-include="DynamicTem2"></div>
+      </ion-content>
+    </div>
+  </div>
+   
+   <!-- 模板三 -->
+  <div class="active {{masklayerShowHideClass3}}">
+    <div class="animated  bounceInRight bounceOutRight {{masklayerSignOut3}}  {{ceshi}}" style="top:0px;right:0px;margin-left:50px;min-height: 100%;width:auto;">
+      <ion-content class="scroll- contentionic-scroll  has-header" style="margin-top:0px">
+          <div ng-include="DynamicTem3" style="widht:100%; float:left"></div>
+      </ion-content> 
+    </div>
+  </div>
+
+
+  <ng-include src="'templates/public_bottom.html'"></ng-include> 
+</div>
+<!-- 引入底部菜单 -->
+<!-- <ng-include src="'templates/public_bottom.html'" ></ng-include>  -->
+<!-- 		<ion-refresher pulling-text="Pull to refresh..." on-refresh="doRefresh()"></ion-refresher>
+		
+		<ion-list>
+
+		{{main}}
+		  <a class="button icon icon-right ion-chevron-right" ng-click="takePicture()">2222222</a>
+		<input type="button" ng-click="takePicture()">222</a>
+			<img src="{{image}}">
+			<ion-item ng-repeat="item in items"></ion-item>
+		</ion-list>
+		<ion-slide-box on-slide-changed="slideHasChanged($index)">
+  <ion-slide>
+    <div class="box blue"><h1>BLUE</h1></div>
+  </ion-slide>
+  <ion-slide>
+    <div class="box yellow"><h1>YELLOW</h1></div>
+  </ion-slide>
+  <ion-slide>
+    <div class="box pink"><h1>PINK</h1></div>
+  </ion-slide>
+</ion-slide-box>
+		<span>shfsdfjsdjfkdshkfhdhskfhkhsd</span>
+
+		<ion-infinite-scroll on-infinite="loadMore()" distance="1%"></ion-infinite-scroll> -->
+	
+
+<!--       </ion-content> -->
+<!-- </ion-view> -->
+

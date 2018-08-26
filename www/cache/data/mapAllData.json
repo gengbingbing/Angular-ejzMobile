@@ -1,0 +1,706 @@
+[
+
+{
+"username" : "gongsi1",
+"password" : "123456",
+"realname" : "装修公司A",
+"logo":"装修公司",
+"photo" : "cache/img/000.jpg",
+"url" : "http://www.baidu.com",
+"position" : {"lng" : "108.811114", "lat" : "34.204632"},
+"group_id" : "2",
+"state" : "预约量房",
+"desginScore":"0",
+"minCost":100,
+"desginCost":"100-1500",
+"companyId":"001",
+"decorateCase" : { "img1":"images/pic0.jpg","img2":"images/pic0.jpg","img3":"images/pic0.jpg"},
+"state":"预约装修" ,
+"img":"images/gs_icon2.jpg",
+"telephone":"123456789",
+"address":"雁塔区",
+"serviceType":"施工：家装,工装|设计：|免费服务：免费量房,免费设计,免费出预算 方案|承包方式：半包,全包,全包带软装",
+"instruction":"设计，是一连串沟通与需求的激荡 以品味和专业穿针引线 将动线、机能、收纳等实用功能隐喻于美学之中 融入自然环境与文化 设计，由此有了呼吸的温度。",
+"works":{"img1":"images/biao_img01.png","time1":"2015-2-9","title1":"枫林绿洲","img2":"images/biao_img01.png","title2":"枫林绿洲","time2":"2015-2-9","img3":"images/biao_img01.png","title2":"枫林绿洲","time3":"2015-2-9"}
+},
+
+{
+"username" : "gongsi2",
+"password" : "123456",
+"realname" : "装修公司B",
+"logo":"装修公司",
+"photo" : "cache/img/001.jpg",
+"url" : "http://www.hao123.com",
+"position" : {"lng" : "108.832516", "lat" : "34.232160"},
+"group_id" : "2",
+"state" : "预约量房",
+"desginScore":"9",
+"minCost":90,
+"desginCost":"90-1500",
+"companyId":"002",
+"decorateCase" : { "img1":"images/pic0.jpg","img2":"images/pic0.jpg","img3":"images/pic0.jpg"},
+"state":"预约装修" ,
+"img":"images/gs_icon2.jpg",
+"telephone":"123456789",
+"address":"雁塔区",
+"serviceType":"施工：家装,工装|设计：|免费服务：免费量房,免费设计,免费出预算 方案|承包方式：半包,全包,全包带软装",
+"instruction":"设计，是一连串沟通与需求的激荡 以品味和专业穿针引线 将动线、机能、收纳等实用功能隐喻于美学之中 融入自然环境与文化 设计，由此有了呼吸的温度。",
+"works":{"img1":"images/biao_img01.png","time1":"2015-2-9","title1":"枫林绿洲","img2":"images/biao_img01.png","title2":"枫林绿洲","time2":"2015-2-9","img3":"images/biao_img01.png","title2":"枫林绿洲","time3":"2015-2-9"}
+},
+
+{
+"username" : "gongsi3",
+"password" : "123456",
+"realname" : "装修公司C",
+"logo":"装修公司",
+"age" : "40",
+"photo" : "cache/img/002.jpg",
+"url" : "http://www.github.com",
+"position" : {"lng" : "109.058265", "lat" : "34.264152"},
+"group_id" : "2",
+"state" : "预约量房",
+"desginScore":"6",
+"minCost":160,
+"desginCost":"160-1500",
+"companyId":"003",
+"decorateCase" : { "img1":"images/pic0.jpg","img2":"images/pic0.jpg","img3":"images/pic0.jpg"},
+"state":"预约装修" ,
+"img":"images/gs_icon2.jpg",
+"telephone":"123456789",
+"address":"雁塔区",
+"serviceType":"施工：家装,工装|设计：|免费服务：免费量房,免费设计,免费出预算 方案|承包方式：半包,全包,全包带软装",
+"instruction":"设计，是一连串沟通与需求的激荡 以品味和专业穿针引线 将动线、机能、收纳等实用功能隐喻于美学之中 融入自然环境与文化 设计，由此有了呼吸的温度。",
+"works":{"img1":"images/biao_img01.png","time1":"2015-2-9","title1":"枫林绿洲","img2":"images/biao_img01.png","title2":"枫林绿洲","time2":"2015-2-9","img3":"images/biao_img01.png","title2":"枫林绿洲","time3":"2015-2-9"}
+},
+
+{
+"username" : "gongsi4",
+"password" : "123456",
+"realname" : "装修公司D",
+"logo":"装修公司",
+"age" : "36",
+"photo" : "cache/img/005.jpg",
+"url" : "http://www.jq22.com",
+"position" : {"lng" : "108.971888", "lat" : "34.292666"},
+"group_id" : "2",
+"state" : "预约量房",
+"desginScore":"8",
+"minCost":150,
+"desginCost":"150-1500",
+"companyId":"004",
+"decorateCase" : { "img1":"images/pic0.jpg","img2":"images/pic0.jpg","img3":"images/pic0.jpg"},
+"state":"预约装修" ,
+"img":"images/gs_icon2.jpg",
+"telephone":"123456789",
+"address":"雁塔区",
+"serviceType":"施工：家装,工装|设计：|免费服务：免费量房,免费设计,免费出预算 方案|承包方式：半包,全包,全包带软装",
+"instruction":"设计，是一连串沟通与需求的激荡 以品味和专业穿针引线 将动线、机能、收纳等实用功能隐喻于美学之中 融入自然环境与文化 设计，由此有了呼吸的温度。",
+"works":{"img1":"images/biao_img01.png","time1":"2015-2-9","title1":"枫林绿洲","img2":"images/biao_img01.png","title2":"枫林绿洲","time2":"2015-2-9","img3":"images/biao_img01.png","title2":"枫林绿洲","time3":"2015-2-9"}
+},
+{
+"username" : "gongsi5",
+"password" : "123456",
+"realname" : "装修公司E",
+"logo":"装修公司",
+"age" : "32",
+"photo" : "cache/img/004.jpg",
+"url" : "http://www.jb51.net",
+"position" : {"lng" : "108.891111", "lat" : "34.322232"},
+"group_id" : "2",
+"state" : "预约量房",
+"desginScore":"3",
+"minCost":200,
+"desginCost":"200-1500",
+"companyId":"005",
+"decorateCase" : { "img1":"images/pic0.jpg","img2":"images/pic0.jpg","img3":"images/pic0.jpg"},
+"state":"预约装修",
+"img":"images/gs_icon2.jpg",
+"telephone":"123456789",
+"address":"雁塔区",
+"serviceType":"施工：家装,工装|设计：|免费服务：免费量房,免费设计,免费出预算 方案|承包方式：半包,全包,全包带软装",
+"instruction":"设计，是一连串沟通与需求的激荡 以品味和专业穿针引线 将动线、机能、收纳等实用功能隐喻于美学之中 融入自然环境与文化 设计，由此有了呼吸的温度。",
+"works":{"img1":"images/biao_img01.png","time1":"2015-2-9","title1":"枫林绿洲","img2":"images/biao_img01.png","title2":"枫林绿洲","time2":"2015-2-9","img3":"images/biao_img01.png","title2":"枫林绿洲","time3":"2015-2-9"}
+},
+
+{
+"username" : "shejishi1",
+"password" : "123456",
+"realname" : "Baby",
+"logo" : "设计师",
+"age" : "33",
+"photo" : "cache/img/000.jpg",
+"url" : "http://www.baidu.com",
+"position" : {"lng" : "108.843114", "lat" : "34.264632"},
+"group_id" : "4",
+"state" : "预约量房",
+"desginScore" : "9",
+"minCost" : 50,
+"desginCost" : "50-150",
+"introduction" : "设计，是一连串沟通与需求的激荡 以品味和专业穿针引线 将动线、机能、收纳等实用功能隐喻于美学之中 融入自然环境与文化 设计，由此有了呼吸的温度。",
+"hrefimg" : "#/main/desginercenter",
+"img" : "cache/img/002.jpg",
+"name" : "设计师A",
+"type" : "中级设计师",
+"time" : "3",
+"style" : "简欧，宜家",
+"hreficon" : "#/main/sizehome",
+"address" : "陕西西安",
+"desginerId" : "001",
+"works" : {
+	"img1" : "images/biao_img01.png",
+	"time1" : "2015-2-9",
+	"title1" : "枫林绿洲",
+	"img2" : "images/biao_img01.png",
+	"title2" : "枫林绿洲",
+	"time2" : "2015-2-9",
+	"img3" : "images/biao_img01.png",
+	"title2" : "枫林绿洲",
+	"time3" : "2015-2-9"
+	}
+},
+
+{
+"username" : "shejishi1",
+"password" : "123456",
+"realname" : "Baby",
+"logo" : "设计师",
+"age" : "33",
+"photo" : "cache/img/003.jpg",
+"url" : "http://www.baidu.com",
+"position" : {"lng" : "108.871114", "lat" : "34.284532"},
+"group_id" : "4",
+"state" : "预约量房",
+"desginScore" : "6",
+"minCost" : 65,
+"desginCost" : "65-150",
+"introduction" : "设计，是一连串沟通与需求的激荡 以品味和专业穿针引线 将动线、机能、收纳等实用功能隐喻于美学之中 融入自然环境与文化 设计，由此有了呼吸的温度。",
+"hrefimg" : "#/main/desginercenter",
+"img" : "cache/img/003.jpg",
+"name" : "设计师A",
+"type" : "初级设计师",
+"time" : "3",
+"style" : "简欧，宜家",
+"hreficon" : "#/main/sizehome",
+"address" : "陕西西安",
+"desginerId" : "002",
+"works" : {
+	"img1" : "images/biao_img01.png",
+	"time1" : "2015-2-9",
+	"title1" : "枫林绿洲",
+	"img2" : "images/biao_img01.png",
+	"title2" : "枫林绿洲",
+	"time2" : "2015-2-9",
+	"img3" : "images/biao_img01.png",
+	"title2" : "枫林绿洲",
+	"time3" : "2015-2-9"
+	}
+},
+
+{
+"username" : "shejishi1",
+"password" : "123456",
+"realname" : "AngularBaby",
+"logo" : "设计师",
+"age" : "33",
+"photo" : "cache/img/001.jpg",
+"url" : "http://www.baidu.com",
+"position" : {"lng" : "108.841108", "lat" : "34.284649"},
+"group_id" : "4",
+"state" : "预约量房",
+"desginScore" : "8",
+"minCost" : 60,
+"desginCost" : "60-150",
+"introduction" : "设计，是一连串沟通与需求的激荡 以品味和专业穿针引线 将动线、机能、收纳等实用功能隐喻于美学之中 融入自然环境与文化 设计，由此有了呼吸的温度。",
+"hrefimg" : "#/main/desginercenter",
+"img" : "cache/img/004.jpg",
+"name" : "设计师A",
+"type" : "高级设计师",
+"time" : "3",
+"style" : "简欧，宜家",
+"hreficon" : "#/main/sizehome",
+"address" : "陕西西安",
+"desginerId" : "003",
+"works" : {
+	"img1" : "images/biao_img01.png",
+	"time1" : "2015-2-9",
+	"title1" : "枫林绿洲",
+	"img2" : "images/biao_img01.png",
+	"title2" : "枫林绿洲",
+	"time2" : "2015-2-9",
+	"img3" : "images/biao_img01.png",
+	"title2" : "枫林绿洲",
+	"time3" : "2015-2-9"
+	}
+},
+
+{
+"username" : "shejishi1",
+"password" : "123456",
+"realname" : "李晨",
+"logo" : "设计师",
+"age" : "33",
+"photo" : "cache/img/007.jpg",
+"url" : "http://www.baidu.com",
+"position" : {"lng" : "109.841114", "lat" : "35.284632"},
+"group_id" : "4",
+"state" : "预约量房",
+"desginScore" : "5",
+"minCost" : 80,
+"desginCost" : "80-150",
+"introduction" : "设计，是一连串沟通与需求的激荡 以品味和专业穿针引线 将动线、机能、收纳等实用功能隐喻于美学之中 融入自然环境与文化 设计，由此有了呼吸的温度。",
+"hrefimg" : "#/main/desginercenter",
+"img" : "cache/img/005.jpg",
+"name" : "设计师A",
+"type" : "初级设计师",
+"time" : "3",
+"style" : "简欧，宜家",
+"hreficon" : "#/main/sizehome",
+"address" : "陕西西安",
+"desginerId" : "004",
+"works" : {
+	"img1" : "images/biao_img01.png",
+	"time1" : "2015-2-9",
+	"title1" : "枫林绿洲",
+	"img2" : "images/biao_img01.png",
+	"title2" : "枫林绿洲",
+	"time2" : "2015-2-9",
+	"img3" : "images/biao_img01.png",
+	"title2" : "枫林绿洲",
+	"time3" : "2015-2-9"
+	}
+},
+
+{
+"username" : "shejishi1",
+"password" : "123456",
+"realname" : "王祖贤",
+"logo" : "设计师",
+"age" : "33",
+"photo" : "cache/img/006.jpg",
+"url" : "http://www.baidu.com",
+"position" : {"lng" : "108.841114", "lat" : "34.284632"},
+"group_id" : "4",
+"state" : "预约量房",
+"desginScore" : "7",
+"minCost" : 90,
+"desginCost" : "90-150",
+"introduction" : "设计，是一连串沟通与需求的激荡 以品味和专业穿针引线 将动线、机能、收纳等实用功能隐喻于美学之中 融入自然环境与文化 设计，由此有了呼吸的温度。",
+"hrefimg" : "#/main/desginercenter",
+"img" : "cache/img/000.jpg",
+"name" : "设计师A",
+"type" : "高级设计师",
+"time" : "3",
+"style" : "简欧，宜家",
+"hreficon" : "#/main/sizehome",
+"address" : "陕西西安",
+"desginerId" : "005",
+"works" : {
+	"img1" : "images/biao_img01.png",
+	"time1" : "2015-2-9",
+	"title1" : "枫林绿洲",
+	"img2" : "images/biao_img01.png",
+	"title2" : "枫林绿洲",
+	"time2" : "2015-2-9",
+	"img3" : "images/biao_img01.png",
+	"title2" : "枫林绿洲",
+	"time3" : "2015-2-9"
+	}
+},
+
+{
+"username" : "shejishi1",
+"password" : "123456",
+"realname" : "邓超",
+"logo" : "设计师",
+"age" : "33",
+"photo" : "cache/img/007.jpg",
+"url" : "http://www.baidu.com",
+"position" : {"lng" : "108.841114", "lat" : "34.284632"},
+"group_id" : "4",
+"state" : "预约量房",
+"desginScore" : "7",
+"minCost" : 100,
+"desginCost" : "100-150",
+"introduction" : "设计，是一连串沟通与需求的激荡 以品味和专业穿针引线 将动线、机能、收纳等实用功能隐喻于美学之中 融入自然环境与文化 设计，由此有了呼吸的温度。",
+"hrefimg" : "#/main/desginercenter",
+"img" : "cache/img/000.jpg",
+"name" : "设计师A",
+"type" : "高级设计师",
+"time" : "3",
+"style" : "简欧，宜家",
+"hreficon" : "#/main/sizehome",
+"address" : "陕西西安",
+"desginerId" : "006",
+"works" : {
+	"img1" : "images/biao_img01.png",
+	"time1" : "2015-2-9",
+	"title1" : "枫林绿洲",
+	"img2" : "images/biao_img01.png",
+	"title2" : "枫林绿洲",
+	"time2" : "2015-2-9",
+	"img3" : "images/biao_img01.png",
+	"title2" : "枫林绿洲",
+	"time3" : "2015-2-9"
+	}
+},
+
+{
+"photo"          : "cache/img/001.jpg"                        ,
+"minCost"        : 600                                        ,
+"desginCost"     : "600-1000"                                 ,
+"desginScore"    : "6"                                        ,
+"type"           : "中级监理"                                 ,
+"username"       : "jianli1"                                  ,
+"password"       : "123456"                                   ,
+"realname"       : "监理A"                                    ,
+"logo"           : "监理"                                     ,
+"age"            : "33"                                       ,
+"url"            : "http://www.baidu.com"                     ,
+"position"       : {"lng" : "108.881114", "lat" : "34.244632"},
+"group_id"       : "5"                                        ,
+"img"            : "images/jianli_icon0.jpg"                  ,
+"introduction"   : "专心为每一位业主服务"                     ,
+"state"			 : "诚邀监理"								  ,
+"city"			 : "西安"								  	  ,
+"date"			 : "2008年"								  	  ,
+"style"			 :	"欧美"									  ,
+"works"          : 	{"img1" : "images/zp_pic3.jpg", "img2" : "images/zp_pic3.jpg", "img3" : "images/zp_pic3.jpg" }
+},
+
+{
+"photo"          : "cache/img/002.jpg"                        ,
+"minCost"        : 400                                        ,
+"desginCost"     : "400-1000"                                 ,
+"desginScore"    : "2"                                        ,
+"type"           : "高级监理"                                 ,
+"username"       : "jianli1"                                  ,
+"password"       : "123456"                                   ,
+"realname"       : "监理A"                                    ,
+"logo"           : "监理"                                     ,
+"age"            : "33"                                       ,
+"url"            : "http://www.baidu.com"                     ,
+"position"       : {"lng" : "108.882554", "lat" : "34.255632"},
+"group_id"       : "5"                                        ,
+"img"            : "images/jianli_icon0.jpg"                  ,
+"introduction"   : "专心为每一位业主服务"                     ,
+"state"			 : "诚邀监理"								  ,
+"city"			 : "西安"								  	  ,
+"date"			 : "2008年"								  	  ,
+"style"			 :	"欧美"									  ,
+"works"          : 	{"img1" : "images/zp_pic3.jpg", "img2" : "images/zp_pic3.jpg", "img3" : "images/zp_pic3.jpg" }
+},
+
+{
+"photo"          : "cache/img/003.jpg"                        ,
+"minCost"        : 550                                        ,
+"desginCost"     : "550-1000"                                 ,
+"desginScore"    : "3"                                        ,
+"type"           : "中级监理"                                 ,
+"username"       : "jianli1"                                  ,
+"password"       : "123456"                                   ,
+"realname"       : "监理A"                                    ,
+"logo"           : "监理"                                     ,
+"age"            : "33"                                       ,
+"url"            : "http://www.baidu.com"                     ,
+"position"       : {"lng" : "108.887824", "lat" : "34.525632"},
+"group_id"       : "5"                                        ,
+"img"            : "images/jianli_icon0.jpg"                  ,
+"introduction"   : "专心为每一位业主服务"                     ,
+"state"			 : "诚邀监理"								  ,
+"city"			 : "西安"								  	  ,
+"date"			 : "2008年"								  	  ,
+"style"			 :	"欧美"									  ,
+"works"          : 	{"img1" : "images/zp_pic3.jpg", "img2" : "images/zp_pic3.jpg", "img3" : "images/zp_pic3.jpg" }
+},
+
+{
+"photo"          : "cache/img/004.jpg"                        ,
+"minCost"        : 500                                        ,
+"desginCost"     : "500-1000"                                 ,
+"desginScore"    : "7"                                        ,
+"type"           : "初级监理"                                 ,
+"username"       : "jianli1"                                  ,
+"password"       : "123456"                                   ,
+"realname"       : "监理A"                                    ,
+"logo"           : "监理"                                     ,
+"age"            : "33"                                       ,
+"url"            : "http://www.baidu.com"                     ,
+"position"       : {"lng" : "108.884714", "lat" : "34.275632"},
+"group_id"       : "5"                                        ,
+"img"            : "images/jianli_icon0.jpg"                  ,
+"introduction"   : "专心为每一位业主服务"                     ,
+"state"			 : "诚邀监理"								  ,
+"city"			 : "西安"								  	  ,
+"date"			 : "2008年"								  	  ,
+"style"			 :	"欧美"									  ,
+"works"          : 	{"img1" : "images/zp_pic3.jpg", "img2" : "images/zp_pic3.jpg", "img3" : "images/zp_pic3.jpg" }
+},
+
+{
+"photo"          : "cache/img/005.jpg"                        ,
+"minCost"        : 300                                        ,
+"desginCost"     : "300-1000"                                  ,
+"desginScore"    : "6"                                        ,
+"type"           : "高级监理"                                 ,
+"username"       : "jianli1"                                  ,
+"password"       : "123456"                                   ,
+"realname"       : "监理A"                                    ,
+"logo"           : "监理"                                     ,
+"age"            : "33"                                       ,
+"url"            : "http://www.baidu.com"                     ,
+"position"       : {"lng" : "108.881166", "lat" : "34.254532"},
+"group_id"       : "5"                                        ,
+"img"            : "images/jianli_icon0.jpg"                  ,
+"introduction"   : "专心为每一位业主服务"                     ,
+"state"			 : "诚邀监理"								  ,
+"city"			 : "西安"								  	  ,
+"date"			 : "2008年"								  	  ,
+"style"			 :	"欧美"									  ,
+"works"          : 	{"img1" : "images/zp_pic3.jpg", "img2" : "images/zp_pic3.jpg", "img3" : "images/zp_pic3.jpg" }
+},
+
+{
+"photo"          : "cache/img/006.jpg"                        ,
+"minCost"        : 200                                        ,
+"desginCost"     : "200-1000"                                 ,
+"desginScore"    : "8"                                        ,
+"type"           : "初级监理"                                 ,
+"username"       : "jianli1"                                  ,
+"password"       : "123456"                                   ,
+"realname"       : "监理A"                                    ,
+"logo"           : "监理"                                     ,
+"age"            : "33"                                       ,
+"url"            : "http://www.baidu.com"                     ,
+"position"       : {"lng" : "108.855414", "lat" : "34.554632"},
+"group_id"       : "5"                                        ,
+"img"            : "images/jianli_icon0.jpg"                  ,
+"introduction"   : "专心为每一位业主服务"                     ,
+"state"			 : "诚邀监理"								  ,
+"city"			 : "西安"								  	  ,
+"date"			 : "2008年"								  	  ,
+"style"			 :	"欧美"									  ,
+"works"          : 	{"img1" : "images/zp_pic3.jpg", "img2" : "images/zp_pic3.jpg", "img3" : "images/zp_pic3.jpg" }
+},
+
+{
+"photo"          : "cache/img/007.jpg"                        ,
+"minCost"        : 100                                        ,
+"desginCost"     : "100-1000"                                 ,
+"desginScore"    : "9"                                        ,
+"type"           : "高级监理"                                 ,
+"username"       : "jianli1"                                  ,
+"password"       : "123456"                                   ,
+"realname"       : "监理A"                                    ,
+"logo"           : "监理"                                     ,
+"age"            : "33"                                       ,
+"url"            : "http://www.baidu.com"                     ,
+"position"       : {"lng" : "108.881424", "lat" : "34.242532"},
+"group_id"       : "5"                                        ,
+"img"            : "images/jianli_icon0.jpg"                  ,
+"introduction"   : "专心为每一位业主服务"                     ,
+"state"			 : "诚邀监理"								  ,
+"city"			 : "西安"								  	  ,
+"date"			 : "2003年"								  	  ,
+"style"			 :	"欧美"									  ,
+"works"          : 	{"img1" : "images/zp_pic3.jpg", "img2" : "images/zp_pic3.jpg", "img3" : "images/zp_pic3.jpg" }
+},
+
+{
+"username" : "shangjia1",
+"password" : "123456",
+"realname" : "商家A",
+"logo":"商家",
+"age" : "33",
+"photo" : "cache/img/000.jpg",
+"url" : "http://www.baidu.com",
+"position" : {"lng" : "108.881114", "lat" : "34.254632"},
+"group_id" : "3"
+},
+
+
+{
+"username" : "admin",
+"password" : "123456",
+"realname" : "业主A",
+"logo":"业主",
+"sex" : "男",
+"photo" : "cache/img/005.jpg",
+"address" : "±®ÁÖÇø»ÆÑã´å",
+"area" : "ÉÂÎ÷Ê¡ Î÷°²ÊÐ",
+"url" : "http://www.yijiazhuang.cn/Designer/index.shtml",
+"position" : {"lng" : "108.891124", "lat" : "34.254642"},
+"group_id" : "1",
+"url" : "http://www.yijiazhuang.cn/Designer/index.shtml",
+"bidder" : {
+	"id" : 1,
+	"room" : {
+			"txt" : "Æ½²ã",
+			"val" : 0
+		},
+	"decorateBuyType" : {
+			"txt" : "°ë°ü",
+			"val" : 0
+		},
+	"decorateType" : {
+			"txt" : "×ÔÖú×°ÐÞ",
+			"val" : 3
+		},
+	"units" : {
+			"txt" : "Ò»ÊÒÒ»Ìü",                               
+			"val" : 0
+		},
+	"decorateStyle" : {
+			"txt" : "Å·Ê½",
+			"val" : 0
+		},
+	"budget" : {
+			"txt" : "Ð¡ÓÚ5Íò",
+			"val" : 0
+		},
+	"situation" : {
+			"txt" : "Ã«Å÷ÐÂ·¿",
+			"val" : 0
+		}
+
+	}
+},
+
+{
+"username" : "desginer3",
+"logo":"业主",
+"password" : "123456",
+"realname" : "业主A",
+"sex" : "男",
+"photo" : "cache/img/005.jpg",
+"address" : "±®ÁÖÇø»ÆÑã´å",
+"area" : "ÉÂÎ÷Ê¡ Î÷°²ÊÐ", 
+"url" : "http://www.yijiazhuang.cn/Designer/index.shtml",
+"position" : {"lng" : "103.91546 ", "lat" : "35.244532"},
+"group_id" : "1",
+"url" : "http://www.yijiazhuang.cn/Designer/index.shtml",
+"bidder" : {
+	"id" : 1,
+	"room" : {
+			"txt" : "Æ½²ã",
+			"val" : 0
+		},
+	"decorateBuyType" : {
+			"txt" : "°ë°ü",
+			"val" : 0
+		},
+	"decorateType" : {
+			"txt" : "×ÔÖú×°ÐÞ",
+			"val" : 3
+		},
+	"units" : {
+			"txt" : "Ò»ÊÒÒ»Ìü",
+			"val" : 0
+		},
+	"decorateStyle" : {
+			"txt" : "Å·Ê½",
+			"val" : 0
+		},
+	"budget" : {
+			"txt" : "Ð¡ÓÚ5Íò",
+			"val" : 0
+		},
+	"situation" : {
+			"txt" : "Ã«Å÷ÐÂ·¿",
+			"val" : 0
+		}
+
+	}
+},
+{
+"username" : "yezhu",
+"password" : "123456",
+"realname" : "业主B",
+"logo":"业主",
+"sex" : "男",
+"photo" : "cache/img/007.jpg",
+"address" : "±®ÁÖÇøÐ¡ÑãËþ",
+"area" : "ÉÂÎ÷Ê¡ Î÷°²ÊÐ",
+"url" : "http://www.yijiazhuang.cn/Designer/index.shtml",
+"position" : {"lng" : "108.875124", "lat" : "34.252642"},
+"group_id" : "1",
+"url" : "",
+"bidder" : {
+	"id" : 2,
+	"room" : {
+			"txt" : "±ðÊû",
+			"val" : 3
+		},
+	"decorateBuyType" : {
+			"txt" : "È«°ü",
+			"val" : 1
+		},
+	"decorateType" : {
+			"txt" : "ÆäËû×°ÐÞ",
+			"val" : 4
+		},
+	"units" : {
+			"txt" : "ÈýÊÒÁ½Ìü",
+			"val" : 4
+		},
+	"decorateStyle" : {
+			"txt" : "ÏÖ´ú",
+			"val" : 6
+		},
+	"budget" : {
+			"txt" : "20Íò",
+			"val" : 2
+		},
+	"situation" : {
+			"txt" : "Ã«Å÷ÐÂ·¿",
+			"val" : 0
+		}
+	}
+},
+
+{
+"username" : "yezhu123",
+"password" : "123456",
+"realname" : "业主C",
+"logo":"业主",
+"sex" : "女",
+"photo" : "cache/img/006.jpg",
+"address" : "ÑãËþÇø ¸ßÐÂÂ·",
+"area" : "ÉÂÎ÷Ê¡ Î÷°²ÊÐ",
+"url" : "http://www.yijiazhuang.cn/Designer/index.shtml",
+"position" : {"lng" : "108.896124", "lat" : "34.254342"},
+"group_id" : "1",
+"url" : "http://www.yijiazhuang.cn/Designer/index.shtml",
+"bidder" : {
+	"id" : 3,
+	"room" : {
+			"txt" : "Ô¾²ã",
+			"val" : 1
+		},
+	"decorateBuyType" : {
+			"txt" : "ÀÁÈË±ê",
+			"val" : 2
+		},
+	"decorateType" : {
+			"txt" : "×âÁÞ¼ò×°",
+			"val" : 2
+		},
+	"units" : {
+			"txt" : "Á½ÊÒÁ½Ìü",
+			"val" : 2
+		},
+	"decorateStyle" : {
+			"txt" : "ÖÐÊ½",
+			"val" : 2
+		},
+	"budget" : {
+			"txt" : "10Íò",
+			"val" : 1
+		},
+	"situation" : {
+			"txt" : "¾Ö²¿¸ÄÔì",
+			"val" : 2
+		}
+	}
+}
+]
+

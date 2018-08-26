@@ -1,0 +1,27 @@
+<!--   
+ <ul class="base_ul">
+    <li>
+        <span class="person_span_left">房型：{{postdata.HouseInfo.HouseType || '请选择'}}</span> 
+        <a ><span class=" person_span_left">面积：{{decorate.space.txt || '请输入'}}</span> </a>
+        <a ><span class=" person_span_left">装修预算：{{postdata.HouseInfo.budget || '请选择'}}</span> </a>
+    </li>
+    根据您的房屋信息，您至少可免费获得 5 张装修效果图以及1套施工图，具体的效果图设计可在设计师量房时候详谈。完成量房后设计效果图大约需要3-5个工作日完成效果图制作。
+</ul> -->
+
+  <div>
+    <span class="item searc_border_bottom">
+      
+      <a class="fal_left" >
+        <img src="{{evalDesginer.works[0].img}}" class="bid_img2" ng-click="imagesView(decorcompany[0], '免费设计验收')" >
+      </a>
+      
+      <p class="fal_left sty magrin_t20" >
+        <span  ng-click="iconInfo(evalDesginer)"> 
+          <i class="font-size12">{{evalDesginer.name || '设计师稍后会与您联系！'}}</i><br>
+          <i class="font-size12">{{evalDesginer.type}}</i><br>
+        </span> 
+        <span class="font-size12">{{evalDesginer.desginCost}}</span>
+      </p>
+       <a ng-click="desginerTem()" class="house_icon"> 支付设计费</a>
+    </span>
+  </div>

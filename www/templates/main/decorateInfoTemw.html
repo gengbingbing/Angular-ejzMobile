@@ -1,0 +1,86 @@
+<ul class="base_ul02">
+    <li>
+        <a ><span class=" person_span_left">装修预算：{{postdata.DecorateInfo.budge || '请选择'}}</span> </a>
+        <a ><span class="person_span_left">房屋情况：{{postdata.DecorateInfo.houseSituation || '请选择'}}</span> </a>
+        <a ><span class="person_span_left">承包方式：{{postdata.DecorateInfo.contractWay || '请选择'}}</span> </a> 
+    </li>
+</ul>
+
+<div class="dfrex ">
+    <div ng-show="typeAC" >
+      <span class="item searc_border_bottom "  >
+
+      <a class="fal_left"  ng-click="iconInfo(company)">
+        <img src="{{companyElemOne.img}}" class="bid_img2" >
+      </a>
+      
+        <p class="fal_left sty magrin_t20" >
+          <span  ng-click="iconInfo(companyElemOne)"> 
+            <i class="font-size12">{{companyElemOne.name}}</i><br>
+            <i class="font-size12">{{companyElemOne.type}}</i><br>
+          </span>
+          <span class="font-size12">{{companyElemOne.desginCost}}</span>
+          <span>
+  <a ng-click="companySure(companyElemOne)" class="house_icon">{{stateC}}</a>
+  <a id="taotaiCom" ng-click="select('淘汰公司', companyElemOne)" class="house_icon"> 淘汰</a>
+</span>
+        </p>
+      <span>
+</div>
+
+    <div ng-show="typeCC" >
+      <span class="item searc_border_bottom " >
+
+      <a class="fal_left"  ng-click="iconInfo(companyElemTwo)">
+        <img src="{{companyElemTwo.img}}" class="bid_img2" >
+      </a>
+      
+      <p class="fal_left sty magrin_t20" >
+        <span  ng-click="iconInfo(companyElemTwo)"> 
+          <i class="font-size12">{{companyElemTwo.name}}</i><br>
+          <i class="font-size12">{{companyElemTwo.type}}</i><br>
+        </span>
+        <span class="font-size12">{{companyElemTwo.desginCost}}</span>
+        <span>
+  <a ng-click="select('中标公司', companyElemTwo)" class="house_icon">{{stateC}}</a>
+  <a id="taotaiCom" ng-click="select('淘汰公司', companyElemTwo)" class="house_icon"> 淘汰</a>
+</span>
+      </p>
+      <span>
+    </div>
+
+    <div ng-show="typeEC" >
+      <span class="item searc_border_bottom " >
+
+      <a class="fal_left"  ng-click="iconInfo(companyElemThree)">
+        <img src="{{companyElemThree.img}}" class="bid_img2" >
+      </a>
+      
+      <p class="fal_left sty magrin_t20" >
+        <span  ng-click="iconInfo(companyElemThree)"> 
+          <i class="font-size12">{{companyElemThree.name}}</i><br>
+          <i class="font-size12">{{companyElemThree.type}}</i><br>
+        </span>
+        <span class="font-size12">{{companyElemThree.desginCost}}</span>
+        <span>
+  <a ng-click="select('中标公司', companyElemThree)" class="house_icon">{{stateC}}</a>
+  <a id="taotaiCom" ng-click="select('淘汰公司', companyElemThree)" class="house_icon"> 淘汰</a>
+</span>
+      </p>
+      <span>
+    </div>
+
+  <div class="deu_show">
+      <span ng-hide="typeBC">
+        <a ng-click="masklayerClick('invitCompany')"> <img src="images/upload02.jpg" class="bid_img"></a><br>
+      </span>
+
+      <span ng-hide="typeDC">
+        <a ng-click="masklayerClick('invitCompany')"> <img src="images/upload02.jpg" class="bid_img"></a><br>
+      </span>
+
+      <span ng-hide="typeFC">
+        <a ng-click="masklayerClick('invitCompany')"> <img src="images/upload02.jpg" class="bid_img"></a><br>
+      </span>
+    </div>
+</div>

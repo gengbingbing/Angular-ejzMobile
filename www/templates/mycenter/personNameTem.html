@@ -1,0 +1,15 @@
+
+<ion-modal-view ng-controller="personCtrl">
+  <ion-header-bar class="bar-positive">
+    <h1 class="title" >修改姓名<a class="modalClose" ng-click="doneName()">完成</a></h1>
+  </ion-header-bar>
+  <ion-content style="padding:10px;">
+      <div class="person_block magrin_t20">
+			 <div class="item item-input ">
+    			<input type="text" placeholder="请输入姓名" ng-model="userData.realname" >
+    			<span class="persond ion-ios-close" ng-click="clearName()" ></span>
+  			</div>
+				
+	   </div>
+  </ion-content>
+</ion-modal-view>

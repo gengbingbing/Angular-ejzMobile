@@ -1,0 +1,66 @@
+<!-- <ul class="base_ul03">
+   合同款
+   <li>
+     <span class="Constru_infor"><i class="duan_i">{{constructe[0].node}}</i> <i>{{constructe[0].time}}</i></span>
+     <span class="Constru_infor02"> <a class="ion-ios-list-outline" ng-click="constructeSure(0)"> {{constructe[0].time}} </a> <a  ng-class="{true:'bgcolor',false:'ion-ios-checkmark-empty'}[AA]" ng-click="constructeSure(1,constructe[0].operation)" ng-bind="constructe[0].operation"></a></span> 
+   </li> 
+   开工时间
+  <li>
+    <span class="Constru_infor"><i class="duan_i">{{constructe[1].node}}</i> <i>{{constructe[1].time}}</i></span>
+    <span class="Constru_infor02"><a class="ion-ios-list-{{constructe.node}}outline" ng-click="constructeSure(0)"> {{constructe[1].time}}</a> <a ng-class="{true:'bgcolor',false:'ion-ios-checkmark-empty'}[BB]" ng-click="constructeSure(1,constructe[1].operation,1)" ng-bind="constructe[1].operation"></a></span> 
+  </li>
+  水电
+    <li>
+    <span class="Constru_infor"><i class="duan_i">{{constructe[2].node}}</i> <i>{{constructe[2].time}} </i></span>
+    <span class="Constru_infor02"><a class="ion-ios-list-outline" ng-click="constructeSure(0)"> {{constructe[2].time}} </a> <a  ng-class="{true:'bgcolor',false:'ion-ios-checkmark-empty'}[CC]" ng-click="constructeSure(1,constructe[2].operation,2)" ng-bind="constructe[2].operation"></a></span> 
+  </li>
+  泥木
+  <li>
+    <span class="Constru_infor"><i class="duan_i">{{constructe[3].node}}</i> <i>{{constructe[3].time}}</i></span>
+    <span class="Constru_infor02"> <a class="ion-ios-list-outline" ng-click="constructeSure(0)"> {{constructe[3].time}} </a> <a ng-class="{true:'bgcolor',false:'ion-ios-checkmark-empty'}[DD]" ng-click="constructeSure(1,constructe[3].operation,3)" ng-bind="constructe[3].operation"></a></span>
+  </li>
+  油漆
+  <li>
+    <span class="Constru_infor"><i class="duan_i">{{constructe[4].node}}</i> <i>{{constructe[4].time}}</i></span>
+    <span class="Constru_infor02"><a class="ion-ios-list-outline" ng-click="constructeSure(0)"> {{constructe[4].time}} </a> <a  ng-class="{true:'bgcolor',false:'ion-ios-checkmark-empty'}[EE]" ng-click="constructeSure(1,constructe[4].operation,4)" ng-bind="constructe[4].operation"></a></span> 
+  </li>
+  验收
+  <li>
+    <span class="Constru_infor"><i class="duan_i">{{constructe[5].node}}</i> <i>{{constructe[5].time}}</i></span>
+    <span class="Constru_infor02"> <a class="ion-ios-list-outline" ng-click="constructeSure(0)"> {{constructe[5].time}} </a> <a ng-class="{true:'bgcolor',false:'ion-ios-checkmark-empty'}[FF]" ng-click="constructeSure(1,constructe[5].operation,5)" ng-bind="constructe[5].operation"></a></span> 
+  </li>
+     
+</ul>
+ -->
+
+ <ul class="base_ul03">
+   <!-- 合同款 -->
+   <li>
+     <span class="Constru_infor"><i class="duan_i">{{constructe[0].node}}</i><i>{{constructe[0].cost || '暂无数据'}}</i> <i  ng-class="{true:'bgcolor',false:'ion-ios-checkmark-empty'}[AA]" ng-click="constructeSure(1,constructe[0],'合同')" >{{constructe[0].operation || '确认'}}</i></span>
+   </li> 
+   <!-- 装修预付款 -->
+  <li>
+    <span class="Constru_infor"><i class="duan_i" ng-click="constructeSure(0,constructe[1].operation,2)">{{constructe[1].node}}</i><i  ng-class="{true:'bgcolor',false:'ion-ios-checkmark-empty'}[BB]"  >{{constructe[1].operation || '未支付'}}</i></span>
+  </li>
+  <!-- 水电验收 -->
+    <li>
+    <span class="Constru_infor"><i class="duan_i" >{{constructe[2].node}}</i> <i>{{constructe[2].time}} </i></span>
+    <span class="Constru_infor02"><a class="ion-ios-list-outline" ng-click="constructeSure(0,constructe[1].operation,3)"> {{constructe[2].report}} </a> <a  ng-class="{true:'bgcolor',false:'ion-ios-checkmark-empty'}[CC]" >{{constructe[2].operation || '未支付'}}</a></span> 
+  </li>
+  <!-- 泥木验收 -->
+  <li>
+    <span class="Constru_infor"><i class="duan_i">{{constructe[3].node}}</i> <i>{{constructe[3].time}}</i></span>
+    <span class="Constru_infor02"> <a class="ion-ios-list-outline"ng-click="constructeSure(0,constructe[1].operation,4)"> {{constructe[3].report}} </a> <a ng-class="{true:'bgcolor',false:'ion-ios-checkmark-empty'}[DD]" >{{constructe[3].operation || '未支付'}}</a></span>
+  </li>
+  <!-- 油漆验收 -->
+  <li>
+    <span class="Constru_infor"><i class="duan_i">{{constructe[4].node}}</i> <i>{{constructe[4].time}}</i></span>
+    <span class="Constru_infor02"><a class="ion-ios-list-outline" ng-click="constructeSure(0,constructe[1].operation,5)"> {{constructe[4].report}} </a> <a  ng-class="{true:'bgcolor',false:'ion-ios-checkmark-empty'}[EE]" >{{constructe[4].operation || '未支付'}}</a></span> 
+  </li>
+  <!-- 安装验收 -->
+  <li>
+    <span class="Constru_infor"><i class="duan_i">{{constructe[5].node}}</i> <i>{{constructe[5].time}}</i></span>
+    <span class="Constru_infor02"> <a class="ion-ios-list-outline" ng-click="constructeSure(0,constructe[5].operation,6)"> {{constructe[5].report}} </a> <a ng-class="{true:'bgcolor',false:'ion-ios-checkmark-empty'}[FF]" ng-click="constructeSure(1,constructe[5].operation,'安装')">{{constructe[5].operation || '确认'}}</a></span> 
+  </li>
+     
+</ul>

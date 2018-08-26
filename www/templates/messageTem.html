@@ -1,0 +1,57 @@
+<!-- 用户的消息列表模板，点击消息项，弹出内页聊天界面 -->
+<ion-modal-view ng-controller="myCtrl">
+  <ion-header-bar class="bar-positive">
+    <h1 class="title" >消息<a class="modalClose" ng-click="closeModal()">关闭</a></h1>
+    
+  </ion-header-bar>
+
+	<ion-content class="person_content">
+		<!-- <div class="botm56">
+	        <ul class="list">
+	        <li class="item" ng-repeat="company in userimg" desginer2  ng-click="OpenMessage()">
+				<a class="fal_left"><img src="{{company.img}}" class="person_photo_img02"></a>
+	            <div style="margin-top:12px;"><span ng-bind="username"></span></div><br />
+	            <div style="margin-top:1px;"><span ng-bind="usermessage"></span></div>  
+	        </li>
+	        <li class="item">
+	        	<span><i>3333333333333333</i></span>
+	        </li>
+	      </ul>
+	    </div> -->
+
+	   <!--  <div class="botm56">
+	        <ul class="list">
+	        <li class="item" ng-repeat="company in userimg" desginer2>
+	            </a>
+	            <p class="fal_left invit_information"  ng-click="OpenMessage()">
+	             <span> <i>{{company.username}} ：{{company.usermessage}}</i></span>
+	            </p>
+	        </li>
+	      </ul>
+	    </div> -->
+
+
+	    
+	</ion-content>
+
+	<div id="bb" style="display:none;" class="modal-backdrop active {{masklayerShowHideClass}}">
+	  	<div class="bg" masklayer></div>
+	  	<div class="show animated  bounceInRight bounceOutRight {{masklayerSignOut}}" style="top:0px;left:0px;right:0px;min-height: 100%;width: 100%;">
+			<ion-header-bar class="bar-positive bar bar-header disable-user-behavior">
+		        <h1 class="title ng-binding">群聊<a class="modalClose" ng-click="hide()">关闭</a></h1>
+		    </ion-header-bar>
+		    <ion-content class="scroll-content ionic-scroll  has-header">
+		       <div id="myAdvisorview">
+				    <div id="skm_LockPane" class="LockOff"></div>
+				    <div id="LogContainer" class="container"></div>
+				    <br />
+				    <div id="SendDataContainer">
+				      	<input type="text" id="DataToSend" style="float:left; margin-left:1%;background:#EED5B7; display:block; width:83%; 	margin-right: 2%;" size="auto" />
+				      	<button id="SendData" type="button" style="margin-top:5px;" ng-click="SendData();">发送</button>
+				    </div>
+			    <my-advisor></my-advisor>
+				</div>
+		    </ion-content>
+	  	</div>
+	</div>
+</ion-modal-view>

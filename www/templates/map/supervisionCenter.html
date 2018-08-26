@@ -1,0 +1,28 @@
+<ion-slide>
+<div class="search_right"> 
+           <ul class="seach_a">
+            <li><a ng-click="choice('初级监理')">初级监理</a></li>
+            <li><a ng-click="choice('中级监理')">中级监理</a></li>
+            <li><a ng-click="choice('高级监理')">高级监理</a></li>
+            <li><a ng-click="choice('监理评分')" class="a2">按评分</a></li>
+            <li><a ng-click="choice('监理价格')">按价格</a></li>
+            <li><a ng-click="choice('监理热门')">按热门</a></li>
+           </ul>      
+            <ul class="search_photo " ng-repeat="su in mapSupervision | fuzzyBy : type : search | orderBy : expression">
+             <li class=" padding" map2>
+                 <a class="fal_left"><img src="{{su.photo}}" class="person_photo_img02">
+                 </a>
+                 <p class="fal_left sty" >
+                  <span> 监理: <i class="font-size16">{{su.username}} </i></span>
+                  <span> 评分:<i>{{su.desginScore}}</i>级</span>
+                  <span> 擅长风格:<i>{{su.style}}</i></span>
+                  <span> 设计费用:<i>{{su.desginCost}}</span>
+                 </p>
+             </li>
+  </ul> 
+</div> 
+     <!-- ion-infinite-scroll 上拉加载数据指令 distance默认1% nf-if的值为false时，就禁止执行on-infinite
+     在加载数据的时候需要进行相应的区别，以便加载的时候不会出错  -->
+    <ion-infinite-scroll ng-if="vm.moredata" on-infinite="vm.loadMore()" distance="1%" pulling-text="数据加载中，请稍后！" ></ion-infinite-scroll>
+    </ion-infinite-scroll>
+</ion-slide>

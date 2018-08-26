@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en ng-app">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="lib/angular-block-ui/dist/angular-block-ui.css" rel="stylesheet">
+
+    <link href="css/yijiazhang.css" rel="stylesheet">
+    <link href="css/MaskLayer.css" rel="stylesheet">
+
+
+    <!-- IF using Sass (run gulp sass first), then remove the CSS include above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js
+    <script src="lib/ionic/js/ionic.bundle.js"></script> -->
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <!-- <script src="cordova.js"></script> -->
+
+    <!-- your app's js -->
+   <!-- <script src="js/app.js"></script>
+    <script src="lib/seajs/dist/sea.js"></script>
+    <script src="config.js"></script>-->
+    
+    
+    <script type="text/javascript" data-main="config.js" src="lib/requirejs/require.js"></script>
+    <script src="cordova.js"></script>
+  </head>
+
+  <body block-ui="main" ng-controller="indexController" ng-init="initializeController()" ng-cloak>
+
+<script type="text/javascript" src="lib/hprose-js-master-3/dist/hprose.js" flashpath="lib/hprose-js-master-3/dist/"></script>
+
+<!-- 
+      <script src="lib/hammer.js"></script>
+      <script src="lib/touchaction.js"></script>
+ -->
+
+<!-- 
+  <ion-nav-view></ion-nav-view> -->
+<!-- 
+<div ng-view></div> -->
+<!-- <ion-nav-view ui-view="main"></ion-nav-view> -->
+
+<ion-nav-view ui-view ></ion-nav-view>
+
+<div id="myAdvisorview" style="display:none;">
+    <ion-header-bar class="bar-positive">
+      <h1 class="title"><select id="userlist" style="float: left; width: 50px; height: 30px; border: 0px; background: #1A1627; margin-top: 6px;">
+                <option></option>
+              <option value=0>所有人</option>
+            </select> 我的顾问<a class="modalClose" href="../#/mycenter/my">关闭</a></h1>
+  </ion-header-bar>
+
+  <ion-content id="caht-all">
+    <!-- <div id="moremessages" style="text-align:center; botton:0px; font-size:10; color:#CDD7E2">加载更多</div> -->
+    <div id="chat-column">
+      <div id="chat-messages">        
+        <div class="message-container"></div>
+      </div>
+    </div>
+    
+    <div id="msg-template" style="display: none">
+      <div class="message-container">
+        <div class="userpic"></div>
+        <div style="float:center" class="msg-time"></div>
+        
+        <div class="message">
+          <span class="user"></span>
+          <div class="cloud cloudText">
+            <div style="" class="cloudPannel">
+              <div class="sendStatus"></div>
+              <div class="cloudBody">
+                <div class="content" ></div>
+              </div>
+              <div class="cloudArrow "></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </ion-content>
+
+  <div id="input-box">
+    <form id="msgform" class="form-horizontal post-form">
+      <div class="input-append">
+        <select id="userlist" style="float: left; width: 26%; height:30px; display:none">
+          <option value=0>所有人</option>
+        </select> 
+        <input type="text" id="msg" size="16" class="span7"/> 
+        <input type="submit" value="发送" class="btn">
+      </div>
+    </form>
+  </div>
+    <my-advisor></my-advisor>
+</div>
+
+  </body>
+
+<!--   // <script src="lib/angular-hammer/angular-hammer.js"></script> -->
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Ionic Blank Starter</h1>
+      </ion-header-bar>
+      <ion-content class="has-header">
+     <ion-refresher
+    pulling-text="Pull to refresh..."
+    on-refresh="doRefresh()">
+  </ion-refresher>
+  <ion-list>
+    <ion-item ng-repeat="item in items"></ion-item>
+  </ion-list>
+      </ion-content>
+    </ion-pane> -->

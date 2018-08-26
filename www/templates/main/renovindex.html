@@ -1,0 +1,12 @@
+<ion-modal-view ng-controller="renovinforCtrl">
+  <ion-header-bar class="bar-positive02">
+    <h1 class="title" >设计信息<a class="modalClose" ng-click="closeTemplate2()">关闭</a></h1>
+  </ion-header-bar>
+
+  <ion-content  class="">
+    <!--个人信息主体-->
+      <a href="#" ng-repeat="result in results"> <ion-radio ng-model="choice" >{{result.name}}  </ion-radio></a>
+  </ion-content>
+ 
+</ion-view>
+

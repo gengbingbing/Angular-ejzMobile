@@ -1,0 +1,123 @@
+
+<!-- 装修要求-->
+<ion-slide >
+<div class="title2"><a class="title" >装修要求</a></div>
+<div class="padding" >
+  <!--装修预算-->
+  <div class="item item-divider item_line"> 
+    {{DecorationInfo[2].DecorationDemand.budget.name}}: {{postdata.DecorateInfo.budge || '未选择' }}
+  </div>
+
+  <label class="item item-radio" style="width: 50%;float: left;"  ng-repeat="item in DecorationInfo[2].DecorationDemand.budget.Data" >
+    <input type="radio" ng-value="item.text" ng-model="postdata.DecorateInfo.budge">
+      <div class="item-content"> 
+        {{ item.text }}
+      </div>
+    <i class="radio-icon ion-checkmark"></i> 
+  </label>
+  <span>
+      <!-- 不包括家电及软装、家具的采买 -->
+    {{DecorationInfo[2].DecorationDemand.budget.emphasize}}
+  </span>
+
+
+  <!-- 水电改造报价 -->
+  <div class="item item-divider item_line"> 
+    {{DecorationInfo[2].DecorationDemand.hydropower.name}}: {{postdata.DecorateInfo.hydropower || '未选择' }}
+  </div>
+  <label class="item item-radio" style="width: 50%;float: left;"  ng-repeat="item in DecorationInfo[2].DecorationDemand.hydropower.Data" >
+    <input type="radio" ng-value="item.text" ng-model="postdata.DecorateInfo.hydropower">
+      <div class="item-content"> 
+        {{ item.text }}  
+      </div>
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+
+  <!--房屋情况-->
+  <div class="item item-divider item_line"> 
+    {{DecorationInfo[2].DecorationDemand.houseSituation.name}}: {{postdata.DecorateInfo.houseSituation || '未选择' }}
+  </div>
+  
+  <label class="item item-radio" style="width: 50%;float: left;"  ng-repeat="item in DecorationInfo[2].DecorationDemand.houseSituation.Data" >
+    <input type="radio" ng-value="item.text"ng-model="postdata.DecorateInfo.houseSituation">
+      <div class="item-content"> 
+        {{ item.text }}  
+      </div>
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  <span>
+    {{DecorationInfo[2].DecorationDemand.contractWay.emphasize}}
+  </span>
+  <textarea placeholder="填写您的施工要求" ng-model="postdata.DecorateInfo.constructionRequirement" style="width: 80%"></textarea>
+    
+  <!--承包方式-->
+  <div class="item item-divider item_line"> 
+    {{DecorationInfo[2].DecorationDemand.contractWay.name}}: {{ postdata.DecorateInfo.contractWay || '未选择' }}
+  </div>
+  
+  <label class="item item-radio" style="width: 50%;float: left;"  ng-repeat="item in DecorationInfo[2].DecorationDemand.contractWay.Data" >
+    <input  type="radio" 
+            ng-value="item.text"
+            ng-click="showHide()"
+            ng-model="postdata.DecorateInfo.contractWay">
+      <div class="item-content"> 
+        {{ item.text }}
+      </div>
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  <!-- 全包 -->
+  <div ng-hide="decorateAll">
+    <div class="item item-divider item_line">
+      {{DecorationInfo[2].DecorationDemand.contractWay.selectMaterial}} : {{postdata.DecorateInfo.selectMaterial || '未选择'}}
+    </div>
+    <label ng-repeat= "item in DecorationInfo[2].DecorationDemand.contractWay.Data[1].value" class="item item-radio" style="width: 50%;float: left;"  >
+      <input
+          type="radio"
+          ng-model="postdata.DecorateInfo.selectMaterial" 
+          ng-click="showHide()"
+          ng-value="item.text" >
+      <div class="item-content">
+        {{ item.text }}
+      </div>
+      <i class="radio-icon ion-checkmark"></i>
+    </label>
+  </div>
+
+
+
+
+
+  <!-- 有无确定主材 -->
+  <div ng-hide="confirmResource">
+    <div class="item item-divider item_line">
+      {{DecorationInfo[2].DecorationDemand.contractWay.materialGrade}} : {{postdata.DecorateInfo.materialGrade || '未选择'}}
+    </div>
+    <ion-radio  ng-repeat= "item in DecorationInfo[2].DecorationDemand.contractWay.Data[1].value[1].value" 
+                class="item radiocss"
+                ng-model="postdata.DecorateInfo.materialGrade" 
+                ng-value="item.text" >
+            {{ item.text }}
+    </ion-radio>
+  </div>
+    <span>{{emphasize}}</span>
+  
+
+  <!-- 半包 -->
+<div ng-show="decorateHalf">
+    <div class="item item-divider item_line">{{DecorationInfo[2].DecorationDemand.contractWay.selectMaterial}} : {{itemsChecked}}</div>
+     <ion-checkbox  ng-repeat="item in DecorationInfo[2].DecorationDemand.contractWay.Data[0].value"  
+                    class="item radiocss" 
+                    ng-value="item.text"
+                    ng-model="itemsMark"
+                    ng-click="itemMark(itemsMark, item.text)"
+                    >
+              {{ item.text }}     
+      </ion-checkbox >
+    </div>
+
+   <span class=""><a ng-click="masklayerClickT('templates/main/invitCompany.html')" class="clicke_abig">下一步</a></span> 
+</div>
+</ion-slide >

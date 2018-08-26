@@ -1,0 +1,22 @@
+<ion-modal-view ng-controller="myCtrl">
+	<ion-header-bar class="bar-positive02">
+		<h1 class="title">监理，设计师，业主<a class="modalClose"ng-click="closeModal()">关闭</a></h1>
+	</ion-header-bar>
+	
+	<!-- <ion-refresher pulling-text="加载更多..." on-refresh="doRefresh()"></ion-refresher>  -->
+
+	<ion-content class="padding botm56"has-bouncing="false">
+
+		<!--  群聊界面的指令E -->
+		<!-- <div id="skm_LockPane" class="LockOff"></div>
+	    <div id='LogContainer' class='container'></div>
+	    <br /> -->
+	       <!--  <div id='SendDataContainer'>
+	        <input type="text" id="DataToSend" style="float:left; background:#EED5B7; display:block; width:85%; margin-right: 15px;" size="auto" />
+	        <button id='SendData' type="button" style="margin-top:5px;" ng-click='SendData();'>发送</button>
+        	</div> -->
+        <div>
+        	<my-advisor></my-advisor>
+		</div>	
+	</ion-content>
+</ion-view>

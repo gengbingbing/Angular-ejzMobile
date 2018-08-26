@@ -1,0 +1,60 @@
+
+<ion-content class="margin10">
+<div class="title2"><a class="title" >公司详细信息</a><a class="modalClose" ng-click="masklayerClick2()">关闭</a></div>
+
+<div class="padding White">
+    <div class="des_top">
+     <img src="{{dc2.img}}"  class="person_photo_img03 fal_left">
+      <span class="des_name">
+        <i>{{company2.realname}}</i>        
+        <i>{{company2.score}}</i>
+        <i><a href="" class="icon01 blue fal_left"  ng-click="makeAppointment(company2,0)">{{company2.state}}</a></i>
+      </span>
+    </div>
+
+   <!-- <div class="des_intro04">
+     <span ng-click="showHide(1)">首页</span>|
+     <span ng-click="showHide(2)">公司简介</span>|
+     <span ng-click="showHide(3)">装修案例</span>|
+     <span ng-click="showHide(4)">设计团队</span>|
+     <span ng-click="showHide(5)">公司资质</span>| 
+      
+    </div> --> 
+  <div class="des_intro02" ng-show="typeA">
+        <p>公司简介</p>
+            {{dc2.instruction}}
+  </div>   
+  <div class="des_intro02" ng-show="typeB">
+    <p>装修案例</p>
+     <ul class="reaov_img ">
+     <li class="">
+      <img src="{{dc2.decorateCase.img1 || 'images/upload.jpg'}}" ng-click="masklayerClickA()">
+      <img src="{{dc2.decorateCase.img2 || 'images/upload.jpg'}}" >
+      <img src="{{dc2.decorateCase.img3 || 'images/upload.jpg'}}">
+    </li>
+    </ul>
+  </div>
+
+  <div class="des_intro02" ng-show="typeG">
+    <p>设计团队</p>
+    <ul class=" reaov_img">
+     <li class="">
+      <img src="{{dc2.works.img1 || 'images/upload.jpg'}}" >
+      <img src="{{dc2.works.img2 || 'images/upload.jpg'}}" >
+      <img src="{{dc2.works.img3 || 'images/upload.jpg'}}" >    
+    </li>
+  </div>
+
+
+   <div class="des_intro02" ng-show="typeH">    
+    <p>公司资质</p>   
+    <ul class="reaov_img ">
+     <li class="">
+      <img src="{{dc2.works.img3 || 'images/upload.jpg'}}" >
+      <img src="{{dc2.works.img3 || 'images/upload.jpg'}}" >
+      <img src="{{dc2.works.img3 || 'images/upload.jpg'}}" >
+    </li>
+    </ui>
+   </div>
+</div>
+</ion-content>

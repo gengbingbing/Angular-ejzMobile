@@ -1,0 +1,10 @@
+
+<ion-view ng-controller="myCtrl" ng-init="iframeResize()">
+	<ion-header-bar class="bar-positive">
+	    <h1 class="title">我的易家保账户<a class="modalClose" ng-click="closeModal()">关闭</a></h1>
+	</ion-header-bar>
+	<!-- <ion-content has-bouncing="false" style="margin-top:-1px; overflow:hidden;"> -->
+		<iframe ng-src="http://m.ejbpay.com" frameborder="0" width="{{iframeSet.width}}" height="{{iframeSet.height}}" 
+style=" margin-top:44px;"></iframe>
+  	<!-- </ion-content> -->
+</ion-view>

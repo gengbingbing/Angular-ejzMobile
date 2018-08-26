@@ -1,0 +1,120 @@
+
+<div class="dfrex">
+<!--     <div ng-show="typeA" >
+  <span class="item searc_border_bottom">
+
+  <a>
+    <img  src="{{desginElemOne.img  || MDesginer.img}}" class="desgin_photo_little"  ng-click="iconInfo(desginElemOne)">
+  </a>
+  <a class="fal_left" >
+    <img src="{{desginElemOne.works[0].img}}" class="bid_img2" ng-click="imagesView(desginElemOne, '设计师页面')" >
+  </a>
+  
+  <p class="fal_left sty magrin_t20" >
+    <span  ng-click="iconInfo(desginElemOne)"> 
+      <i class="font-size12">{{desginElemOne.name}}</i><br>
+      <i class="font-size12">{{desginElemOne.type}}</i><br>
+    <span class="font-size12">{{desginElemOne.desginCost}}</span>
+
+    <span >
+      <a ng-click="select('中标', desginElemOne)" class="house_icon">{{state}}</a>
+      <a ng-click="select('淘汰', desginElemOne)" class="house_icon"> 淘汰</a>
+    </span>
+  </p>
+  <a ng-click="desginerTem()" class="house_icon"> 支付设计费</a>
+
+</span>
+
+</div> -->
+
+      <div ng-show="typeA" >
+      <span class="item searc_border_bottom">
+      <a>
+        <img  src="{{desginElemOne.img}}" class="desgin_photo_little"  ng-click="iconInfo(desgin)">
+      </a>
+      <a class="fal_left" >
+        <img src="{{desginElemOne.works[0].img}}" class="bid_img2" ng-click="imagesView(desginElemOne, '设计师页面')" >
+      </a>
+      
+      <p class="fal_left sty magrin_t20" >
+        <span  ng-click="iconInfo(desginElemTwo)"> 
+          <i class="font-size12">{{desginElemOne.name}}</i><br>
+          <i class="font-size12">{{desginElemOne.type}}</i><br>
+        </span>
+        <span class="font-size12">{{desginElemOne.desginCost}}</span>
+        <span >
+          <a ng-click="select('中标', desginElemOne)" class="house_icon">{{state}}</a>
+          <a ng-click="select('淘汰', desginElemOne)" class="house_icon"> 淘汰</a>
+        </span>
+      </p>  
+     
+    </span>
+
+    </div>
+
+    <div ng-show="typeC" >
+      <span class="item searc_border_bottom">
+      <a>
+        <img  src="{{desginElemTwo.img}}" class="desgin_photo_little"  ng-click="iconInfo(desginElemTwo)">
+      </a>
+      <a class="fal_left" >
+        <img src="{{desginElemTwo.works[0].img}}" class="bid_img2" ng-click="imagesView(desginElemTwo, '设计师页面')" >
+      </a>
+      
+      <p class="fal_left sty magrin_t20" >
+        <span  ng-click="iconInfo(desginElemTwo)"> 
+          <i class="font-size12">{{desginElemTwo.name}}</i><br>
+          <i class="font-size12">{{desginElemTwo.type}}</i><br>
+        </span>
+        <span class="font-size12">{{desginElemTwo.desginCost}}</span>
+        <span >
+          <a ng-click="select('中标', desginElemTwo)" class="house_icon">{{state}}</a>
+          <a ng-click="select('淘汰', desginElemTwo)" class="house_icon"> 淘汰</a>
+        </span>
+      </p>  
+    </span>
+    </div>
+
+      <div ng-show="typeE" >
+        <span class="item searc_border_bottom">
+        <a>
+          <img src="{{desginElemThree.img}}" class="desgin_photo_little"  ng-click="iconInfo(desginElemThree)">
+        </a>
+
+        <a class="fal_left" >
+          <img src="{{desginElemThree.works[0].img}}" class="bid_img2" ng-click="imagesView(desginElemThree, '设计师页面')" >
+        </a>
+        <p class="fal_left sty magrin_t20" >
+          <span  ng-click="iconInfo(desginElemThree)"> 
+            <i class="font-size12">{{desginElemThree.name}}</i><br>
+            <i class="font-size12">实测面积：{{""}}</i><br>
+            <i class="font-size12">设计工期：{{""}}</i><br>
+            <i class="font-size12">设计单价：{{desginElemThree.desginCost}}</i><br>
+            <i class="font-size12">设计总价：{{""}}</i><br>
+          </span>
+          <span >
+            <a ng-click="select('中标', desginElemThree)" class="house_icon">{{state}}</a>
+            <a ng-click="select('淘汰', desginElemThree)" class="house_icon"> 淘汰</a>
+          </span>
+        </p>
+      </span>
+      </div>
+<!--     <a ng-click="clearCache()">清除缓存</a> -->
+
+      <div class="deu_show" >
+        <span ng-hide="typeB">
+          <a ng-click="masklayerClick('invitDesginer')"> <img src="images/upload02.jpg" class="bid_img"></a>
+        </span>
+
+        <span ng-hide="typeD">
+          <a  ng-click="masklayerClick('invitDesginer')"> <img src="images/upload02.jpg" class="bid_img"></a>
+        </span>
+
+        <span ng-hide="typeF">
+          <a ng-click="masklayerClick('invitDesginer')"> <img src="images/upload02.jpg" class="bid_img"></a>
+        </span>
+
+      </div>
+
+  </div>
+

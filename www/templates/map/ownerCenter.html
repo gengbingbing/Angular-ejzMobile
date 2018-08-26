@@ -1,0 +1,20 @@
+<ion-slide>
+  <div class="search_right"> 
+            <ul class="search_photo " ng-repeat="ow in owner">
+                 <li class=" padding" map5>
+                     <a class="fal_left"><img src="{{ow.img}}" class="person_photo_img02">
+                     </a>
+                     <p class="fal_left sty" >
+                      <span> 业主:{{ow.name}}</span>
+                      <span> 电话：{{ow.phone}}</span>
+                      <span> 擅长风格:</span>
+                      <span> 设计费用:</span>
+                     </p>
+                 </li>
+            </ul> 
+ </div> 
+
+  <!-- ion-infinite-scroll 上拉加载数据指令 distance默认1% nf-if的值为false时，就禁止执行on-infinite  -->
+    <ion-infinite-scroll ng-if="vm.moredata" on-infinite="vm.loadMore()" distance="1%" ></ion-infinite-scroll>
+    </ion-infinite-scroll>
+</ion-slide>

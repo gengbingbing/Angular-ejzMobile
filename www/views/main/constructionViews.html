@@ -1,0 +1,74 @@
+<ion-view view-title="邀请设计" ng-controller="constructionCtrl"  ng-init="initData()">
+  <ion-nav-bar class="bar-positive">
+      <ion-nav-back-button class="button-icon ion-chevron-left"></ion-nav-back-button>
+  </ion-nav-bar> 
+
+
+
+  <ion-content>
+<ion-slide-box on-slide-changed="slideHasChanged($index)" show-pager="false" style="z-index: 1000">
+    <ion-slide>
+		 <div class="padding_base">
+		    <div class="time_base">
+		     <span class="base_icon04"><i> </i></span>
+		     <span class="time_base_span">装修信息</span>
+		      <ul class="base_ul">
+		          <li>
+		            <span><a href="">装修预算</a></span>
+		            <span><a href="">房屋情况</a></span>
+		            <span><a href="">承包方式</a><i class="color_i_ore"><a href="" ><i class="ion-information-circled"> </i>请选择半包选材</a></i></span>
+		            <span><a href="">支付方式</a><i class="color_i_ore"><a href="" ><i class="ion-information-circled"> </i>请选择免费监理</a></i></span>
+		          </li>
+		    
+		      </ul>
+
+		    </div>
+		   </div>
+ 	</ion-slide>
+ 	<ion-slide>
+   
+    <ul class="list">
+          <li class="item" ng-repeat="company in invitdesgin"> 
+              <a href="#/main/desgincenter" class="fal_left" ng-click="desginer()"><img src="{{company.img}}" class="person_photo_img02"></a>
+             <div class="fal_left invit_information02">
+              	<p class="invit_span">
+                  <span>  <i>{{company.name}}</i></span>
+                  <span> 等级:<i> {{company.type}}</i></span>
+                  <span> 从业经验：<i>{{company.time}} </i>年</span>
+              </p>
+                 <a href="" class="invit_icon">邀请</a>
+              </div>
+          </li>
+     </ul>
+  </ion-slide>
+  <ion-slide>
+       
+        <span class="nav_title"> <i class="fal_left font-size16">对比装修报价，选择中标公司 </i> <a herf="#" class="fal_right invitmax">立即邀请 </a></span>
+        <ul class="list">
+           <li class="item" ng-repeat="company in invitdesgin"> 
+              <a href="#/main/desgincenter" class="fal_left" ng-click="desginer()"><img src="{{company.img}}" class="person_photo_img02"></a>
+              <p class="fal_left invit_information02" >
+                <span>  <i>{{company.name}}</i> <a href="" class="fal_right">查看报价单</a></span>
+                <a href="" class="sues_bid01">中标 </a><a href="" class="sues_bid02">淘汰 </a><a href="" class="sues_bid03">报一口价 </a>
+              </p>
+             
+          </li> 
+        </ul>
+  </ion-slide>
+    <ion-slide>
+        <div class="item border_none" ng-repeat="invit in desginercenter"> 
+        	<i class="sues_bid">中标</i>
+        <a href="" class="fal_left" ng-click="desginer()"><img src="{{invit.img}}" class="person_photo_img02"></a>
+        <div class="fal_left invit_information02" >
+          <p class="">
+          <span> <i>我爱我家装修公司</i></span>
+          <span>总装修款:<i>50000元</i></span>
+          </p>
+        </div>
+           <a class="pay_icon magrin_t20" >立即充值 </a>
+    </div>
+  </ion-slide-box> 
+  </ion-content>
+  <ng-include src="'templates/public_bottom.html'"></ng-include>
+</ion-view>
+

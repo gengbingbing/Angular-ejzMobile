@@ -1,0 +1,27 @@
+<!--设计方式-->
+<ion-slide>
+ <div class="title2"><a class="title" >设计方式</a></div>
+<div class="list padding" >
+  <!--设计花费-->
+  <div class="item item-divider"> 
+    {{DecorationInfo[1].DecorationDemand.designCost.name}}: {{ postdata.HouseInfo.designCost || '未选择' }}
+  </div>
+  
+  <ion-radio ng-repeat="item in DecorationInfo[1].DecorationDemand.designCost.Data"
+             ng-value="item.txt"
+             ng-model="postdata.HouseInfo.designCost" style="width: 50%;float: left;">
+    {{ item.txt }}
+  </ion-radio>
+
+  <!--设计方式-->
+  <div class="item item-divider"> 
+    {{DecorationInfo[1].DecorationDemand.designModes.name}}: {{ postdata.HouseInfo.designModes || '未选择' }}
+  </div>
+  
+  <ion-radio ng-repeat="item in DecorationInfo[1].DecorationDemand.designModes.Data"
+             ng-value="item.txt"
+             ng-model="postdata.HouseInfo.designModes" style="width: 50%;float: left;">
+    {{ item.txt }}
+  </ion-radio>
+</div>
+</ion-slide>

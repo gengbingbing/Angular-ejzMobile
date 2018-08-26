@@ -1,0 +1,13 @@
+
+<ion-modal-view ng-controller="decorateCtrl">
+  <ion-header-bar class="bar-positive">
+    <h1 class="title" >{{modalOptions.title || '装修需求'}}<a class="modalClose" ng-click="doneInput()">完成</a></h1>
+  </ion-header-bar>
+
+  <ion-content  class="">
+      <div class="person_block magrin_t20">
+        <house-complete></house-complete>
+     </div>
+  </ion-content>
+
+</ion-modal-view>

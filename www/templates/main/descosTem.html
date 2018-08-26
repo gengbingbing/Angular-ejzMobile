@@ -1,0 +1,16 @@
+
+<ion-modal-view ng-controller="desgincostCtrl">
+  <ion-header-bar class="bar-positive">
+    <!-- <h1 class="title" >设计信息<a class="modalClose" ng-click="closeModal()">完成</a></h1> -->
+    <h1 class="title" >{{modalOptions.title || '装修需求'}}</h1>
+  </ion-header-bar>
+
+  <ion-content  class="">
+    <!--个人信息主体-->
+    <ion-radio ng-repeat="result in results" ng-value="result.val" ng-model="modalOptions.txt" ng-click="chooseClick(result)" >{{result.txt}}</ion-radio>
+  </ion-content>
+ 
+</ion-view>
+
+
+

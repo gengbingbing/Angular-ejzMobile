@@ -1,0 +1,16 @@
+
+<ion-modal-view ng-controller="personCtrl">
+  <ion-header-bar class="bar-positive">
+    <h1 class="title" >我的地址<a class="modalClose" ng-click="doneAddress()">完成</a></h1>
+  </ion-header-bar>
+  <ion-content style="padding:10px;">
+  		<!--修改用户地址-->
+      <div class="person_block magrin_t20">
+			 <div class="item item-input ">
+    			<input type="text" placeholder="请输入您的地址" ng-model="userData.address" >
+    			<span class="persond ion-ios-close" ng-click="clearAddress()" ></span>
+  			</div>
+				
+	   </div>
+  </ion-content>
+</ion-modal-view>

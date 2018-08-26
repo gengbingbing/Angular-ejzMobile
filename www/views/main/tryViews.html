@@ -1,0 +1,38 @@
+<ion-view view-title="已邀请" ng-controller="invitteamCtrl"  ng-init="initData()">
+  <ion-nav-bar class="bar-positive">
+      <ion-nav-back-button class="button-icon ion-chevron-left"></ion-nav-back-button>
+  </ion-nav-bar> 
+
+
+
+  <ion-content class="">
+    <!-- 装修及验收节点页面 -->
+    <div class="l_img ">
+          <div class="padding ">
+              <span class="font-size12" >请您先支付设计费到易家保安全账户，设计师方可为您完成全部设计并上传整套设计方案，待确认方案后再由易家保将设计费转给设计师。
+</span>
+            <span class="pay" >
+              <p>房屋面积:120m²(设计师已确认)    设计单价:20元/m²</p>
+              <p>计费：{{postdata.HouseInfo.designCost * decorate.space.val}}元 - 保证金：{{bond.price}}元={{postdata.HouseInfo.designCost * decorate.space.val-bond.price}}元</p>
+            </span>
+             
+          </div>
+ </div>
+<div class="des_intro padding">
+    <p>验收设计方案
+     </p>
+</div>  
+<div class="Progress_bar">
+        <span class="Progress_say">平面图</span><i class="Progress_round ion-checkmark-round "> </i><span class="Progress_tiao"></span>
+        <span class="Progress_say">平面图</span><i class="Progress_round ion-checkmark-round "> </i><span class="Progress_tiao"></span>
+        <span class="Progress_say">平面图</span><i class="Progress_round ion-checkmark-round "> </i><span class="Progress_tiao"></span>
+        <span class="Progress_say">平面图</span><i class="Progress_round ion-checkmark-round "> </i><span class="Progress_tiao"></span>
+        
+        <span class="Progress_say">平面图</span><i class="Progress_round ion-checkmark-round "> </i>
+    </div>
+<!-- 装修及验收节点页面end -->
+
+  </ion-content>
+  <ng-include src="'templates/public_bottom.html'"></ng-include>
+</ion-view>
+

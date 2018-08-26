@@ -1,0 +1,55 @@
+<ion-view view-title="我的资料" ng-controller="personCtrl" ng-init="initInfo()">
+
+	<ion-nav-bar class="bar-positive">
+	    <ion-nav-back-button class="button-icon ion-chevron-left"></ion-nav-back-button>
+	</ion-nav-bar> 
+	
+	<ion-content  class="person_content">
+	   <!-- 个人信息主体 -->
+	   <div class="person_block magrin_t20"　>
+			<ul class="list ">
+				<li class="item item_icon_d ">
+					<a class="person_list_a02 " ng-click="modifyPhoto()" >  
+						<span class="person_list__span">头像   </span> 
+						<span class=" person_span_right" >
+							<img id="headimg" src="{{userData.photo || 'images/photo_img.png'}}" class="person_photo_img">
+						</span>
+					</a>	
+				</li>
+				<li class="item">
+					<a class="person_list_a"> 
+						<span class="person_list__span">用户名 </span> <span class=" person_span_right">{{userData.username}}</span> 
+					</a>
+				</li>
+				<li class="item item_icon_d">
+					<a class="person_list_a" ng-click="nameModal()" > 
+					<span class="person_list__span">姓名 </span> <span class="person_photo person_span_right">{{userData.realname || '未填写'}}</span> 
+					</a>
+				</li>
+				<li class="item item_icon_d">
+					<a class="person_list_a" ng-click="addressModal()" > 
+					 <span class="person_list__span">我的地址 </span> <span class=" person_span_right">{{userData.address || '未填写'}}</span>
+					 </a>
+					</li>
+			</ul>
+	   </div>
+	   <div class="person_block magrin_t20">
+			<ul class="list ">
+				
+				<li class="item item_icon_d">
+					<a class="person_list_a" ng-click="sexModal()" > 
+						<span class="person_list__span">性别 </span> <span class="person_photo person_span_right">{{userData.sex || '未选择'}}</span>
+					</a>
+				</li>
+				
+				<li class="item item_icon_d">
+					<a class="person_list_a" ng-click="areaModal()" > 
+						<span class="person_list__span">地区 </span> <span class=" person_span_right">{{userData.area || '未填写'}}</span> 
+					</a>
+				</li>
+			</ul>
+	   </div>
+	</ion-content>
+	<ng-include src="'/templates/public_bottom.html'"></ng-include>
+</ion-view>
+

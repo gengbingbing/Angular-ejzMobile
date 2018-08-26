@@ -1,0 +1,40 @@
+<ion-slide >
+  <script  type="text/javascript" src="js/desginer.js"></script>
+  <div class="title2"><a class="title" >监理评价</a></div>
+  <div class="padding">
+      <div class="padding">
+           <div class="reviews">
+            <a class=" fal_left"><img src="{{evalDesginer.img}}" class="person_photo_img"></a>
+            <p class="fal_left pay_infor" >
+                <span class="font-size16"> 监理</span>
+                <span>服务类型：设计（家装、工装） 施工 免费量房、免费设计、</span>
+            </p>
+      </div>  
+  </div>
+  <div class="assess">
+        <div class="desginer_width">
+          <div class="font_desginer">综合评价：</div>
+          <div class="formItemDiff1"></div>
+          <div class="formItemDiff1"></div>
+          <div class="formItemDiff1"></div>
+          <div class="formItemDiff1"></div>  
+          <div class="formItemDiff1"></div>
+          <div id="pointP1" style="float:left; margin-left:20px;"></div>
+        </div>
+
+        <div class="desginer_width">
+          <div class="font_desginer">服务态度：</div>
+          <div class="formItemDiff2"></div>
+          <div class="formItemDiff2"></div>
+          <div class="formItemDiff2"></div>
+          <div class="formItemDiff2"></div>  
+          <div class="formItemDiff2"></div>
+          <div id="pointP2" style="float:left; margin-left:20px;"></div>
+        </div>
+  </div>  
+       <span class="rev_zi" >评价 </span>
+          <textarea class="rev_tarea" ng-model="decorateInfo.desginerEval"></textarea>
+          <a class="pay_icon magrin_t20" ng-click="masklayerClickT('templates/main/evaluationCompany.html')">提交</a>
+       <ng-include src="'js/desginer.js'"></ng-include> 
+  </div>     
+</ion-slide>

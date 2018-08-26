@@ -1,0 +1,54 @@
+<!-- <ion-view view-title="设置" ng-controller="setCtrl" ng-init="initData()">
+	<ion-nav-bar class="bar-positive">
+	    <ion-nav-back-button class="button-icon ion-chevron-left"></ion-nav-back-button>
+	</ion-nav-bar>  -->
+
+<ion-modal-view ng-controller="myCtrl">
+  <ion-header-bar class="bar-positive">
+    <h1 class="title" >设置<a class="modalClose" ng-click="closeModal()">关闭</a></h1>
+  </ion-header-bar>
+
+	<ion-content  class="person_content">
+
+		<div class="person_block magrin_t20">
+			<ul class="list ">
+				<li>
+					<ion-toggle ng-model="userData.notifyState" toggle-class="toggle-calm" ng-change="pushNotificationChange()">是否接收消息通知</ion-toggle>
+				</li>
+				<li class="item item_icon_d">
+					<a href="#/mycenter/modifyPwd" class="person_list_a" ng-click="updataPWD()"> 
+						<span class="person_list__span"> 修改密码</span> 
+					</a>
+				</li>
+			</ul>
+	   	</div>
+
+	   <div class="person_block magrin_t20">
+			<ul class="list ">
+				<li class="item">
+					<a href="" class="person_list_a" ng-click="updataAPP()"> 
+						<span class="person_list__span"> 版本更新<i class="ion-information-circled" id="app-bb" style="color:red;"></i> <div ng-bind="app" style="float:right; margin-right='10px'; color:#AD9D9D;"></div></span> 
+					</a>
+				</li>
+
+				<li class="item">
+					<a href="" class="person_list_a " ng-click="clearCache()"> 
+						<div class="">清理缓存 <div ng-bind="cache" style="float:right; margin-right='5px'"></div></div>						 
+					</a>
+				</li>
+			</ul>
+	   </div>
+
+	   <div class="person_block magrin_t20">
+			<ul class="list ">
+				<li class="item">
+					<a  href="" class="person_list_a" ng-click="quit()"> 
+						<span class="person_list__span">退出 </span>
+					</a>
+				</li>
+			</ul>
+	   </div>
+	</ion-content>
+<ng-include src="'templates/public_bottom.html'"></ng-include>
+</ion-modal-view>
+<!-- </ion-view> -->

@@ -1,0 +1,34 @@
+
+
+<ion-view view-title="使用手机号注册" ng-controller="registerCtrl" ng-init="initData()">
+
+<ion-nav-bar class="bar-positive">
+    <ion-nav-back-button class="button-icon ion-chevron-left"></ion-nav-back-button>
+</ion-nav-bar> 
+
+<ion-content class="botm56" has-bouncing="false">
+   <div class="l_img "><img src="images/login_pic.jpg"></div>
+   <div class="list padding">
+  	  <label class="item item-input ion-person">
+  	    <input type="text" placeholder="手机号码"  ng-model="user.telephone" >
+  	  </label>
+      <!-- <label class="item item-input ion-unlocked"> -->
+      <div style="margin: 10px 0; overflow:hidden;">
+        <input type="text" placeholder="短信验证码" ng-model="user.validate" class="input_validSend">
+        <a href="" class="{{btnSend.classname || 'btn_validSend'}}" ng-click="validSend()">{{btnSend.txt || '发送短信验证码'}}</a>
+      </div>
+      <!-- </label> -->
+      <p class="password_j"> 
+      <label class="checkbox fal_left" ng-click="agreeItem()">
+        <input type="checkbox" class="fal_left" ng-checked="varData.agree">
+      </label>
+      <i class="fal_left pass_world_m txt_agree">我同意<a href="" class="txt_item" ng-click="openItems()">《易家装服务条款》</a></i>
+     </p>
+    <a class="button button-block button-positive button_font" ng-click="regist()">
+      注册
+    </a>
+   </div>
+
+      </ion-content>
+<ng-include src="'templates/public_bottom.html'"></ng-include>
+</ion-view>

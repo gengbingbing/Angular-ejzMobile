@@ -1,0 +1,54 @@
+<ion-view view-title="我的顾问" ng-controller="myAdvisorCtrl">
+
+	<!-- <ion-nav-bar class="bar-positive">
+	    <ion-nav-back-button class="button-icon ion-chevron-left"></ion-nav-back-button>
+	</ion-nav-bar> -->
+	<ion-header-bar class="bar-positive">
+	    <h1 class="title">我的顾问<a class="modalClose" href="../#/mycenter/my">关闭</a></h1>
+	</ion-header-bar>
+	
+	<div id="caht-all" style="overflow: auto; height: 100%; margin-top:44px; padding-bottom: 100px;">
+	<!-- <ion-content id="caht-all" style="overflow: auto;"> -->
+		<!-- <div id="moremessages" style="text-align:center; botton:0px; font-size:10; color:#CDD7E2">加载更多</div> -->
+		<div id="chat-column">
+			<div id="chat-messages">				
+				<div class="message-container"></div>
+			</div>
+		</div>
+		
+		<div id="msg-template" style="display: none">
+			<div class="message-container">
+				<div class="userpic"></div>
+				<div style="float:center" class="msg-time"></div>
+				
+				<div class="message">
+					<span class="user"></span>
+					<div class="cloud cloudText">
+						<div style="" class="cloudPannel">
+							<div class="sendStatus"></div>
+							<div class="cloudBody">
+								<div class="content" ></div>
+							</div>
+							<div class="cloudArrow "></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	<!-- </ion-content> -->
+	</div>
+
+	<div id="input-box">
+		<form id="msgform" class="form-horizontal post-form">
+			<div class="input-append">
+				<select id="userlist" style="float: left; width: 26%; height:30px; display:none">
+					<option value=0>所有人</option>
+				</select> 
+				<input type="text" id="msg" size="16" class="span7"/> 
+				<input type="submit" value="发送" class="btn">
+			</div>
+		</form>
+	</div>
+</ion-view>
+

@@ -1,0 +1,59 @@
+<!--个人信息主体-->
+<ion-view view-title="我要发标" ng-controller="decorateCtrl" ng-init="initData()">
+  <ion-nav-bar class="bar-positive">
+      <ion-nav-back-button class="button-icon ion-chevron-left"></ion-nav-back-button>
+  </ion-nav-bar> 
+<ion-content http-equiv="refresh">
+   <div class="padding_base" disabled="true">
+    <div class="time_base">
+      <div ng-repeat="data in DecorationInfo">
+        <span class="base_icon {{data.Color }}" ><i> </i></span>
+        <!-- <span class="time_base_span" ng-click="masklayerClickT(data.Templates)">{{data.Text}}</span> -->
+        <span class="time_base_span" ng-click="clickif($event,data)">{{data.Text}}</span>
+        <div  class="base_widht">
+          <span>
+            <temmode tem="{{data.Tem}}"></temmode>
+          </span>
+        </div>
+      </div>
+    </div>
+   </div>
+
+</ion-content>
+
+<div class="modal-backdrop active {{masklayerShowHideClass}}">
+  <div class="bg" masklayer></div>
+  <div class="show animated  bounceInRight bounceOutRight {{masklayerSignOut}}" style="top:0px;right:0px;min-height: 100%;width: 79%;">
+    <ion-content class="scroll-content ionic-scroll  has-header" style="margin-top:0px">
+        <div ng-include="DynamicTem"></div>
+    </ion-content>
+  </div>
+</div>
+
+<div class="modal-backdrop active {{masklayerShowHideClass2}}">
+  <!-- <div class="bg" masklayer></div> -->
+  <div class="show animated  bounceInUp bounceOutUp {{masklayerSignOut}}" style="background-color:white; top:0px;left:0px;right:0px;min-height: 100%;width: 100%;">
+    <ion-content class="scroll-content ionic-scroll  has-header" style="margin-top:0px">
+       <div ng-include="DynamicTem2"></div>
+    </ion-content>
+  </div>
+</div>
+
+<div class="modal-backdrop active {{masklayerShowHideClass3}}">
+  <!-- <div class="bg" masklayer></div> -->
+  <div class="show animated  bounceInUp bounceOutUp {{masklayerSignOut}}" style="background-color:white; top:0px;left:0px;right:0px;min-height: 100%;width: 100%;">
+    <ion-content class="scroll-content ionic-scroll  has-header" style="margin-top:0px">
+       <div ng-include="DynamicTem3"></div>
+    </ion-content>
+  </div>
+</div>
+
+<!-- <div class="modal-backdrop active {{masklayerShowHideClass3}}">
+  <div class="show animated  bounceInUp bounceOutUp {{masklayerSignOut}}" style="background-color:rgba(10%,20%,30%,0.3); top:0px;left:0px;right:0px;min-height: 100%;width: 100%;">
+   <div ng-include="DynamicTem3"></div>
+  </div>
+</div> -->
+
+
+<ng-include src="'templates/public_bottom.html'"></ng-include> 
+</ion-view>

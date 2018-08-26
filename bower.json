@@ -1,0 +1,19 @@
+{
+  "name": "HelloIonic",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.0.0"
+  },
+  "dependencies": {
+    "ngCordova": "~0.1.15-alpha",
+    "requirejs": "~2.1.17",
+    "angularAMD": "~0.2.1",
+    "require-css": "~0.1.8",
+    "seajs": "~3.0.0",
+    "angular-block-ui": "~0.2.0",
+    "angular-response-lag": "~0.0.1",
+    "hprose-html5": "~1.5.3",
+    "ng-baidu-map": "*",
+    "jquery-ui-slider-pips": "~1.10.5",
+  }
+}

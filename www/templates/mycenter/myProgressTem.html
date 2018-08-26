@@ -1,0 +1,75 @@
+<ion-modal-view ng-controller="myCtrl">
+	<ion-header-bar class="bar-positive">
+		<h1 class="title">我的装修进度<a class="modalClose"ng-click="closeModal()">关闭</a></h1>
+	</ion-header-bar>
+
+	<ion-content  class="botm56"> 
+		<ion-slide-box on-slide-changed="slideHasChanged($index)"show-pager="false"style="z-index: 1000">
+			<ion-slide>
+				<div class="padding_base">
+					<div class="time_bases">
+						<div>
+					        <span class="base_icon" style="background:gray;"><i> </i></span>
+					        <span class="time_base_span" ng-click="See()">房屋基本信息</span>   <!-- {{data.Text}} -->
+					    </div>
+					</div>
+					<div class="time_bases">
+						<div>
+					        <span class="base_icon Orange" ><i> </i></span>
+					        <span class="time_base_span">邀请设计师</span>   <!-- {{data.Text}} -->
+					    </div>
+					</div>
+					<div class="time_bases">
+						<div>
+					        <span class="base_icon" style="background:gray;"><i> </i></span>
+					        <span class="time_base_span" >邀请监理</span>   <!-- {{data.Text}} -->
+					    </div>
+					</div>
+					<div class="time_bases">
+						<div>
+					        <span class="base_icon" style="background:gray;"><i> </i></span>
+					        <span class="time_base_span">选择设计公司</span>   <!-- {{data.Text}} -->
+					    </div>
+					</div>
+					<div class="time_bases">
+						<div>
+					        <span class="base_icon" style="background:gray;"><i> </i></span>
+					        <span class="time_base_span">开始装修</span>   <!-- {{data.Text}} -->
+					    </div>
+					</div>
+					<div class="time_bases">
+						<div>
+					        <span class="base_icon" style="background:gray;"><i> </i></span>
+					        <span class="time_base_span">进行中</span>   <!-- {{data.Text}} -->
+					    </div>
+					</div>
+					<div class="time_bases">
+						<div>
+					        <span class="base_icon" style="background:gray;"><i> </i></span>
+					        <span class="time_base_span">装修完成</span>   <!-- {{data.Text}} -->
+					    </div>
+					</div>
+					<div class="time_bases">
+						<div>
+					        <span class="base_icon" style="background:gray;"><i> </i></span>
+					        <span class="time_base_span">收房</span>   <!-- {{data.Text}} -->
+					    </div>
+					</div>
+					<div class="time_bases">
+						<div>
+					        <span class="base_icon" style="background:gray;"><i> </i></span>
+					        <span class="time_base_span">总体评价</span>   <!-- {{data.Text}} -->
+					    </div>
+					</div>
+					<div class="time_bases">
+						<div>
+					        <span class="base_icon" style="background:gray;"><i> </i></span>
+					        <span class="time_base_span">完美结束</span>   <!-- {{data.Text}} -->
+					    </div>
+					</div>
+				</div>
+			</ion-slide>
+		</ion-slide-box>
+	</ion-content>
+
+</ion-modal-view>

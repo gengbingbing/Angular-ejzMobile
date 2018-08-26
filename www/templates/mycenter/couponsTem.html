@@ -1,0 +1,32 @@
+<ion-modal-view ng-controller="myCtrl">
+  <ion-header-bar class="bar-positive">
+    <h1 class="title" >优惠券<a class="modalClose" ng-click="closeModal()">关闭</a></h1>
+  </ion-header-bar>
+
+  <ion-content has-bouncing="false">
+    <div class="padding ">
+       <label class="item item-input ">
+          <input type="text" placeholder="请输入你的优惠券兑换码" ng-model="couponsCode.code"  >
+        
+        </label>
+      <button class="button button-block button-positive" ng-click="useCoupons()">兑换优惠券</button>
+
+     <!--  没有优惠券时请将下面一行放开 -->
+      <!-- <span class="coupons_icon"> 您还没有优惠券，快去使用兑换码兑换吧！</span>-->
+      <div class="coupons_img">
+
+        <span class="fal_left coupons_number">￥ <i>200</i> </span>
+        <span class="fal_right">仅可抵消装修款</span>
+        <p >使用时间：2015.07.07-2015.08.08</p>
+        
+      </div>
+  <div class="coupons_img02">
+
+        <span class="fal_left coupons_number02">￥ <i>200</i> </span>
+        <span class="fal_right">仅可抵消装修款</span>
+        <p >使用时间：2015.07.07-2015.08.08</p>
+        
+      </div>
+    </div>
+  </ion-content>
+</ion-modal-view>

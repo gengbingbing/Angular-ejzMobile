@@ -1,0 +1,34 @@
+{
+    "author": "Ma Bingyao <andot@hprose.com>",
+    "name": "hprose-html5",
+    "version": "1.5.3",
+    "description": "Hprose is a High Performance Remote Object Service Engine. It is a modern, lightweight, cross-language, cross-platform, object-oriented, high performance, remote dynamic communication middleware.",
+    "keywords": [
+        "hprose",
+        "serialize",
+        "serialization",
+        "rpc",
+        "webservice",
+        "web",
+        "service",
+        "framework",
+        "library",
+        "game",
+        "cross-platform",
+        "cross-language",
+        "communication",
+        "middleware"
+    ],
+    "homepage": "http://hprose.com",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hprose/hprose-html5.git"
+    },
+    "main": [
+        "dist/hprose-html5.js"
+    ],
+    "ignore": [
+        "test", "src", "*.md"
+    ],
+    "license": "MIT"
+}

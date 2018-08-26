@@ -1,0 +1,45 @@
+
+<ion-slide>
+<div class="title2"><a class="title" >设计师详细信息</a><a class="modalClose" ng-click="closeTemplate2(desginElem)">关闭</a></div>
+   <div class="padding">
+      <ul class="list" >
+      <li class="">
+             <img src="{{desginElem.img}}"  class="person_photo_img03 fal_left">
+              <span class="des_name">
+                <i>姓名：{{desginElem.name}}</i>
+                <i>等级：{{desginElem.type}}</i>
+                <i>收费：<span>{{desginElem.desginCost}}</span></i>
+                <i>评分：{{desginElem.desginScore}}</i>
+                <div ng-click="roomReservations(desginElem)" class="icon01 blue fal_left">{{desginElem.state}}</div>
+              </span>
+
+          <div class="des_intro">
+            <p>个人简介 </p>
+            <span>
+               {{desginElem.introduction}}
+            </span> 
+          </div>
+          <div class="des_intro">
+            <p>擅长风格 </p>
+            <a href="">现代</a><a href="">现代</a><a href="">现代</a><a href="">现代</a><a href="">现代</a><a href="">现代</a>
+          </div>
+          <div class="des_img">
+            <p>设计作品 </p>
+            <!-- <a ng-click="imagesView(desginElem, '装修公司页面')"><img src="{{desginElem.works.img1}}" ></a>
+            <a ng-click="imagesView(desginElem, '装修公司页面')"><img src="{{desginElem.works.img}}" ></a>
+            <a ng-click="imagesView(desginElem, '装修公司页面')"><img src="{{desginElem.works.img3}}" ></a> -->
+            <div id="container" >
+              <div id="content" class="big_img_show">
+                <img src="{{desginElem.works.img1}}" zoomable id="image-scrollable" on-hold="savePhoto()" on-tap="pinchImage()">
+              </div>
+            </div>
+
+           <!--  <a><img src="{{desginElem.works.img1}}" ></a>
+            <a><img src="{{desginElem.works.img}}" ></a>
+            <a><img src="{{desginElem.works.img3}}" ></a> -->
+
+          </div>
+      </li>
+    </ul>
+   </div>
+</ion-slide>

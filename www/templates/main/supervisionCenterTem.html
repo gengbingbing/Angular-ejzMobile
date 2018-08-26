@@ -1,0 +1,62 @@
+<!-- <div style="width:100%;height:40px;background-color: #1a1627;"><a style="margin-top:20px">监理详细信息<a class="modalClose" ng-click="closeTemplate()">关闭</a></div> -->
+ <!-- <ion-content style="margin:40px 0px 0px 0px;"> -->
+ <ion-slide >
+<div class="title2"><a class="title" >监理详细信息<a class="modalClose" ng-click="closeTemplate2()">关闭</a></a></div>
+    <div class="padding" >
+      <ul class="list height " >
+      <li class=""  ng-modal="supervisionElem.img">
+        
+             <img src="{{supervisionElem.img}}"  class="person_photo_img03 fal_left">
+              <span class="des_name font-size12">
+                <i>姓名：{{supervisionElem.name}}</i>
+                <i>等级：{{supervisionElem.type}}</i>
+                <i>从业时间：{{supervisionElem.time}}</i>
+                <i>负责城市：{{supervisionElem.cicty}}</i>
+                <i><a ng-click="closeTemplate()">关闭</a></i>
+                <div ng-click="supervisionReservations()" class="icon01 blue fal_left">{{supervisionElem.state}}</div>
+              </span>
+          <div class="des_intro">
+            <p>个人简介 </p>
+            <span>
+                   {{supervisionElem.introduction}}
+            </span>
+          </div>
+          <div class="des_img">
+            <p>监理案例 </p>
+              <p>房屋信息及验收日志</p>
+            <a href=""><img src="{{supervisionElem.works.img1}}" ></a>
+            <span class="huose_type">
+               <i>小区:</i>
+               <i>业主:</i>
+               <i>房型:</i>
+               <i>面积:</i>
+               <i>户型:</i>
+               <i>风格:</i>
+            </span>
+            <span class="super_p">
+              <p>1.水电验收:首创漫香郡新中式设计日志</p>
+              <p>2.泥木验收:首创漫香郡新中式设计日志</p>
+              <p>3.油漆验收:首创漫香郡新中式设计日志</p>
+              <p>4.竣工验收:首创漫香郡新中式设计日志</p>
+            </span>
+            <p>正在监理 </p>
+                <p>房屋信息及验收日志</p>
+            <span class="huose_type">
+               <i>小区:</i>
+               <i>业主:</i>
+               <i>房型:</i>
+               <i>面积:</i>
+               <i>户型:</i>
+               <i>风格:</i>
+            </span>
+            <span class="super_p">
+              <p>1.水电验收:首创漫香郡新中式设计日志</p>
+              <p>2.泥木验收:首创漫香郡新中式设计日志</p>
+              <p>3.油漆验收:首创漫香郡新中式设计日志</p>
+              <p>.竣工验收:首创漫香郡新中式设计日志</p>
+            </span>
+          </div>
+      </li>
+    </ul>
+   </div>
+</ion-slide >

@@ -1,0 +1,36 @@
+<ion-view view-title="联系方式" ng-controller="desgincontactCtrl " ng-init="initData()"  >
+  <ion-nav-bar class="bar-positive02">
+      <ion-nav-back-button class="button-icon ion-chevron-left"></ion-nav-back-button>
+  </ion-nav-bar> 
+
+
+
+  <ion-content class="botm56">
+    <!--个人信息主体-->
+  <div class="botm56">
+   <div > <img src="images/img_contact_nav.jpg"></div>
+    <div class="padding">
+        <ul class="list">
+           <li class="item item_icon_d" ng-click="modifySex()"><a  >性别 <span class=" person_span_right" >{{userData.sex || '未选择'}}</span> </a> </li>
+           <li class="item item_icon_d" ng-click="clickcontact()"><a>手机号码 <span class=" person_span_right" >{{userData.telephone || '未填写'}}</span> </a> </li>
+        </ul>
+     <span class="clicke_a"><a href="#/main/desgincost" class="last_a"> 上一步</a> <a href="#/main/infor" class="next_a">下一步</a></span>
+   </div>
+  </div>
+    <div class="botm56">
+    
+   <div > <img src="images/img_infor_nav.jpg"></div>
+    <div class="padding">
+    
+    <ul class="list">
+      <li class="item item_icon_d" ng-click="chooseModeClick()"><a>设计方式<span class=" person_span_right" >{{userData.bidder.designMode.txt || "未选择"}}</span> </a> </li>
+      <li class="item item_icon_d" ng-click="chooseCostClick()"><a >设计费用范围 <span class=" person_span_right" >{{userData.bidder.designCost.txt || "未选择"}}</span> </a> </li>
+    </ul>
+     <span class="clicke_a"><a href="#/main/index" class="last_a"> 上一步</a> <a href="#/main/desgincontact" class="next_a">下一步</a></span>
+   </div>
+
+  </div>
+  </ion-content>
+  <ng-include src="'templates/public_bottom.html'"></ng-include>
+</ion-view>
+

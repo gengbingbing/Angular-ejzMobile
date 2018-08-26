@@ -1,0 +1,43 @@
+    
+<div class="ererwr">
+
+   <div class="big_nav">
+     <a  href="#/tab/livingMuseum/livingMuseum"  >
+    
+    </a>
+</div>
+
+</div><p class="bottom_line"></p>
+<div class="tabs tabs-icon-top erd" >
+
+  <a class="tab-item" href="#/home/index">
+    <i class="icon ion-ios-paw" name="home-tab"></i>
+    足迹
+  </a>
+ 
+  <a class="tab-item " onclick="loginToSys('#/main/index')">
+    
+
+   <p class="zhuangx"> <i class="icon nav_icon02" name="index-tab" ></i>我要装修</p>
+
+    </a>
+  <a class="tab-item" onclick="loginToSys('#/mycenter/my')">
+    <i class="icon   ion-ios-body-outline" name="index-tab"></i>
+    我
+  </a>
+</div>  
+
+<script>
+  function loginToSys(_toUrl){
+    //存在用户名和密码缓存时，自动填充缓存数据，跳转目标页面
+    if(localStorage.getItem('user') && JSON.parse(localStorage.getItem('user')).loginState){  //存在用户信息缓存，且是登录状态
+/*      window.location.href= _toUrl;
+      window.location.reload();*/
+      window.location.replace(_toUrl);
+    }else {
+      window.location.href= '#/mycenter/index';
+    }
+  }
+
+
+</script>

@@ -1,0 +1,73 @@
+<ion-view view-title="设计方式" ng-controller="decorateCtrl " ng-init="initData()" >
+
+  <ion-nav-bar class="bar-positive">
+      <ion-nav-back-button class="button-icon ion-chevron-left"></ion-nav-back-button>
+  </ion-nav-bar> 
+
+
+
+  <ion-content class="botm56 padding">
+    <!--个人信息主体-->
+ <!--  <div class="botm56">
+   
+  <div > <img src="images/img_infor_nav.jpg"></div>
+   <div class="padding">
+   
+   <ul class="list">
+     <li class="item item_icon_d" ng-click="chooseModeClick()"><a>设计方式<span class=" person_span_right" >{{userData.bidder.designMode.txt || "未选择"}}</span> </a> </li>
+     <li class="item item_icon_d" ng-click="chooseCostClick()"><a >设计费用范围 <span class=" person_span_right" >{{userData.bidder.designCost.txt || "未选择"}}</span> </a> </li>
+   </ul>
+    <span class="clicke_a"><a href="#/main/index" class="last_a"> 上一步</a> <a href="#/main/desgincontact" class="next_a">下一步</a></span>
+  </div> -->
+<ion-slide-box on-slide-changed="slideHasChanged($index)" show-pager="false" style="z-index: 1000">
+  <ion-slide>
+     <div > <img src="images/img_infor_nav.jpg"></div>
+   <ul class="list">
+     <li class="item item_icon_d" ng-click="chooseModeClick()">
+          <a>设计方式<span class=" person_span_right" >{{userData.bidder.designMode.txt || "未选择"}}</span> </a> 
+     </li>
+     <li class="item item_icon_d" ng-click="chooseCostClick()">
+          <a>设计费用范围 <span class=" person_span_right" >{{userData.bidder.designCost.txt || "未选择"}}</span> </a> 
+     </li>
+   </ul>
+  </ion-slide>
+  
+  <ion-slide>
+  <div class="padding_base">
+    <div class="time_base">
+     <span class="base_icon"><i> </i></span>
+     <span class="time_base_span">设计信息</span>
+      <ul class="base_ul">
+        <li><span>公寓</span>｜<span>公寓</span>|<span>公寓</span><span>公寓</span>｜<span>公寓</span>|<span>公寓</span></li><li><span>公寓</span>｜<span>公寓</span>|<span>公寓</span><span>公寓</span>｜<span>公寓</span>|<span>公寓</span></li>
+      </ul>
+      <span class="base_icon"><i> </i></span>
+     <span class="time_base_span">设计信息</span>
+      <ul class="base_ul">
+        <li><span>公寓</span>｜<span>公寓</span>|<span>公寓</span><span>公寓</span>｜<span>公寓</span>|<span>公寓</span></li><li><span>公寓</span>｜<span>公寓</span>|<span>公寓</span><span>公寓</span>｜<span>公寓</span>|<span>公寓</span></li>
+      </ul>
+
+    </div>
+  </div>  
+  </ion-slide>
+ <ion-slide>
+    <div class="l_img lunbo03" ><img src="../images/lead_img03.jpg"></div>
+  </ion-slide>
+  <ion-slide>
+    <div class="box pink" style="background-color: pink; height: 100%"><h1>PINK</h1>
+    <div style="padding:20px;">
+      <a href="#/home/index" class="button button-full button-outline button-positive">即刻启程</a>
+
+    </div>
+    </div>
+  </ion-slide>
+</ion-slide-box>
+
+   
+  </ion-content>
+  <ng-include src="'templates/public_bottom.html'"></ng-include>
+</ion-view>
+
+
+
+
+

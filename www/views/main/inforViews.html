@@ -1,0 +1,58 @@
+<ion-view view-title="个人信息" ng-controller="informationCtrl"  >
+
+  <ion-nav-bar class="bar-positive02">
+      <ion-nav-back-button class="button-icon ion-chevron-left"></ion-nav-back-button>
+  </ion-nav-bar> 
+
+
+
+  <ion-content class="botm56 ">
+    <!--个人信息主体-->
+  <div class="botm56">
+    
+   <div > <img src="images/img_information_nav.jpg"></div>
+       <ul class="list botm56"　>
+        <li class="item"><a>房型/小区
+            <span class=" person_span_right">{{userData.bidder.room.txt || '未填写'}}</span> </a>
+        </li>
+
+       <li class="item"><a>装修类型
+          <span class=" person_span_right">{{userData.bidder.decorateType.txt || '未填写'}}</span> </a>
+       </li>
+
+       <li class="item"><a>户型
+          <span class=" person_span_right">{{userData.bidder.units.txt || '未填写'}}</span> </a>
+       </li>
+
+       <li class="item"><a>风格
+          <span class=" person_span_right">{{userData.bidder.decorateStyle.txt || '未填写'}}</span> </a>
+       </li>
+
+       <li class="item"><a>房屋情况：
+          <span class=" person_span_right">{{userData.bidder.situation.txt || '未填写'}}</span> </a>
+       </li>
+
+       <li class="item"><a>装修预算：
+        <span class=" person_span_right">{{userData.bidder.budget.txt || '未填写'}}</span> </a>
+       </li>
+
+       <li class="item"><a>设计方式
+          <span class=" person_span_right">{{userData.bidder.designMode.txt  || '未填写'}}</span> </a>
+       </li>
+
+       <li class="item"><a>设计费用
+          <span class=" person_span_right">{{userData.bidder.designCost.txt || '未填写'}}</span> </a>
+       </li>
+
+       <li class="item"><a>联系方式
+          <span class=" person_span_right">{{userData.bidder.telephone.txt || '未填写'}}</span> </a>
+       </li>
+
+       
+    </ul>
+       <span class="clicke_a"><a href="#/main/desgincontact" class="last_a"> 上一步</a> <a href="#/main/invitdesgin" class="next_a">下一步</a></span>
+  </div>
+  </ion-content>
+  <ng-include src="'templates/public_bottom.html'"></ng-include>
+</ion-view>
+

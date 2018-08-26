@@ -1,0 +1,166 @@
+<ion-view view-title="设计师管理中心" ng-controller="payCtrl"  ng-init="initData()">
+  <ion-nav-bar class="bar-positive">
+      <ion-nav-back-button class="button-icon ion-chevron-left"></ion-nav-back-button>
+  </ion-nav-bar> 
+
+
+
+  <ion-content >
+    <!--个人信息主体-->
+
+   <ion-slide-box on-slide-changed="slideHasChanged($index)" show-pager="false" style="z-index: 1000">
+  <ion-slide>
+      <div class="l_img ">
+          <div class="padding">
+             <span class="pay" >保证金:<i>{{bond.price || '暂无数据'}}</i></span>
+             <span  ><i class="ion-help-circled"></i> 支付保证金是为确保本次任务真实有效，保证金可冲抵部分设计费。</span>
+             <a class="pay_icon magrin_t20" ng-click="paybond()">支付 </a>
+          </div>
+      </div>
+  </ion-slide>
+
+
+  <ion-slide>
+   <span class="tab_a"><a href="#/main/desgincost" class="default">邀请设计师</a> <a href="#/main/infor" class="press">邀请装修公司</a></span>
+    <ul class="list">
+          <li class="item" ng-repeat="company in invitdesgin"> 
+              <a href="#/main/desgincenter" class="fal_left" ng-click="desginer()"><img src="{{company.img}}" class="person_photo_img02"></a>
+             
+              <p class="fal_left invit_information" >
+                 <div class="invit_span">
+                <span>  <i>{{company.name}}</i></span>
+                <span> 等级:<i> {{company.type}}</i></span> 
+                <span> 从业经验：<i>{{company.time}} </i>年</span>
+                </div>
+              <a href="" class="invit_icon" >预约量房</a>
+              </p>       
+          </li>
+     </ul>
+  </ion-slide>
+  
+  <ion-slide>
+  <ul class="inivt_img">
+   <li><a href="#"><img src="images/photo_img.png" ></a><p><a class="invit_home_icon" ng-click="appointment1">邀请量房</a></p></li>
+   <li><a href="#"><img src="images/photo_img.png" ></a><p><a class="invit_home_icon" ng-click="appointment2">邀请量房</a></p></li>
+   <li><a href="#"><img src="images/photo_img.png" ></a><p><a class="invit_home_icon" ng-click="appointment3">预约量房</a></p></li>
+   <li><a href="#" ><img src="images/photo_img.png" ></a><p><a class="invit_home_icon02" ng-click="appointment4">取消量房</a></p></li>
+   <li><a href="#"><img src="images/photo_img.png" ></a><p><a class="invit_home_icon02" ng-click="appointment5">取消量房</a></p></li>
+   <li><a href="#"><img src="images/photo_img.png" ></a><p><a class="invit_home_icon" ng-click="appointment6">邀请量房</a></p></li>
+   <li><a href="#"><img src="images/photo_img.png" ></a><p><a  class="invit_home_icon" ng-click="appointment7">邀请量房</a></p></li>
+    </ul>    
+  </ion-slide>
+  <ion-slide>
+         <div class="padding">
+              <span> <i class="fal_left font-size16">局部方案对比图 </i> <a herf="#" class="fal_right invitmax">预约量房 </a></span>
+              <ul class="invitchoose">
+                  <li>
+                    <span class="invit_chooseicon">
+                       <a href="#" class="choose01" ng-click="">确认 </a><a href="#"  class="choose02">修改 </a>
+                    </span> 
+                      
+                    <a href="#" > <img src="../images/biao_img01.png" > </a>
+                   <span class="invit_content">
+                     <i class="fal_left">xibingru</i><a href="" class="jii">分享到朋友圈</a>
+                      <p>事实上，各种艺术家协会领导干部兼职当“领导”现象一直颇受争议。2014年12月，《人民日报》就曾发文 </p>
+                   </span>
+                 </li>
+                  <li>
+                    <span class="invit_chooseicon">
+                       <a href="#" class="choose01">确认 </a><a href="#"  class="choose02">修改 </a>
+                    </span> 
+                      
+                    <a href="#" > <img src="../images/biao_img01.png" > </a>
+                   <span class="invit_content">
+                     <i class="fal_left">xibingru</i><a href="" class="jii">分享到朋友圈</a>
+                      <p>事实上，各种艺术家协会领导干部兼职当“领导”现象一直颇受争议。2014年12月，《人民日报》就曾发文 </p>
+                   </span>
+                 </li>
+                  <li>
+                    <span class="invit_chooseicon">
+                       <a href="#" class="choose01">确认 </a><a href="#"  class="choose02">修改 </a>
+                    </span> 
+                      
+                    <a href="#" > <img src="../images/biao_img01.png" > </a>
+                   <span class="invit_content">
+                     <i class="fal_left">xibingru</i><a href="" class="jii">分享到朋友圈</a>
+                      <p>事实上，各种艺术家协会领导干部兼职当“领导”现象一直颇受争议。2014年12月，《人民日报》就曾发文 </p>
+                   </span>
+                 </li>
+
+              <ul>
+         </div>
+  </ion-slide>
+   
+  <ion-slide>
+        <div class="padding">
+              <span> <i class="fal_left font-size16">中标 </i> </span>
+              <ul class="invitchoose">
+                  <li>
+                    <span class="invit_chooseicon">
+                       <a href="#" class="choose03">中标 </a>
+                    </span> 
+                      
+                    <a href="#" > <img src="../images/biao_img01.png" > </a>
+                   <span class="invit_content">
+                     <i class="fal_left">xibingru</i><a href="" class="jii">分享到朋友圈</a>
+                      <p>事实上，各种艺术家协会领导干部兼职当“领导”现象一直颇受争议。2014年12月，《人民日报》就曾发文 </p>
+                   </span>
+                 </li>
+                  
+
+              <ul>
+         </div>
+  </ion-slide>
+    <ion-slide>
+      <div class="l_img ">
+      <div class="padding ">
+           
+             <div  class="font-size12 fal_left magrin_t20"><i class="ion-help-circled"></i> 支付保证金是为确保本次任务真实有效，保证金可冲抵部分设计费。</div>
+             <ul class="list magrin_b20  ">
+                <li class="item">设计费－保证金＝1500￥</li>
+             </ul>
+             <a class="pay_icon magrin_t20" ng-click="paybond()">支付 </a>
+          </div>
+      </div>
+  </ion-slide>
+   <ion-slide>
+         <div class="padding">
+        <span> <i class="fal_left font-size16">验收设计方案 </i>   <a herf="#" class="invit_bid_icon02">更改</a><a herf="#" class="invit_bid_icon">中标</a></span>
+        <ul class="list width100 magrin_t20">
+          <li class="item color_i_ore">施工图已上传:<i class="ion-image "> </i> <!-- <i class="ion-close-round "> </i>这是未上传时的图标状态 --></li>
+          <li class="item color_i_bule">设计预算已上传:<i class="ion-briefcase"></i> <!-- <i class="ion-close-round "> </i> --></li>
+        </ul>
+        <ul class="invit_bid_show ">
+          <li><a href="#/main/construction" > <img src="../images/photo_img.png" ></a></li> 
+          <li><a href="" > <img src="../images/photo_img.png" ></a></li> 
+          <li><a href="" > <img src="../images/photo_img.png" ></a></li>
+          <li><a href="" > <img src="../images/photo_img.png" ></a></li>
+        </ul>
+      </div>
+  </ion-slide>
+  <ion-slide>
+      <div class="padding">
+           <div class="reviews ">
+            <a href="#" class=" fal_left"><img src="images/photo_img.png" class="person_photo_img"></a>
+            <p class="fal_left pay_infor" >
+                <span class="font-size16"> 西安九朝装饰</span>
+                <span>服务类型：设计（家装、工装） 施工 免费量房、免费设计、</span>
+              </p>
+           </div>  
+      </div>
+           <ul class="list rev_stars">
+             <li class="item">服务态度: <img src="../images/statrs.png"> <img src="../images/statrs02.png"> <img src="../images/statrs.png"></li>
+             <li class="item">设计水平: <img src="../images/statrs02.png"> <img src="../images/statrs.png"> <img src="../images/statrs.png"></li>
+             <li class="item">工作效率:  <img src="../images/statrs.png"> <img src="../images/statrs.png"> <img src="../images/statrs.png"> </li>
+           </ul>
+       <span class="rev_zi">评价 </span>
+          <textarea class="rev_tarea" ></textarea>
+          <a href="" class="pay_icon magrin_t20">提交</a>
+  </ion-slide>
+</ion-slide-box> 
+
+
+  </ion-content>
+  <ng-include src="'templates/public_bottom.html'"></ng-include>
+</ion-view>
+

@@ -1,0 +1,41 @@
+<!-- <ul class="base_ul02" ng-repeat="ac in addCompany">
+  <div class="base_ul02 li_float imgtian">
+    <img ng-click="pictureView()" src="{{ac.decorateCase.img1 || 'images/upload.jpg'}}">
+    <img src="{{ac.decorateCase.img2 || 'images/upload.jpg'}}" >
+    <img src="{{ac.decorateCase.img3 || 'images/upload.jpg'}}" >
+  </div>
+
+  <li>
+    <a ><span class=" person_span_left">名称：{{ac.name || '暂无'}}</span> </a>
+    <a ><span class="person_span_left">地址：{{ac.address || '暂无'}}</span> </a>
+    <a ><span class="person_span_left">联系电话：{{ac.telephone || '暂无'}}</span> </a> 
+  </li>
+  <li class="span02 imgtian">
+    <a ><img src="{{evalCopmany.img || 'images/upload.jpg'}}"  ng-click="companyModel()"></a>
+  <p><a class="blue" ng-click="masklayerClickT('templates/main/invitSupervision.html')" class="clicke_abig">更换公司 </a></p>
+  </li>
+</ul>
+
+ -->
+
+<ul class="dfrex ">
+  <li class="item searc_border_bottom " ng-repeat="ac in addCompany">
+    <img  src="{{ac.decorateCase.img}}" class="desgin_photo_little" >
+    <a href ="#/main/desginCenter" class="fal_left">
+      <img src="{{ac.decorateCase.img1}}" class="bid_img">
+    </a>
+
+    <p class="fal_left sty magrin_t20" >
+      <span> 
+        <i class="font-size16">名称：{{ac.name || '暂无'}}</i> <br>
+        <i class="font-size16">地址：{{ac.address || '暂无'}}</i><br>
+        <i class="font-size16">联系电话：{{ac.telephone || '暂无'}}</i><br>
+      </span>
+     
+      <span class="">
+        <a ng-click="select('中标公司', ac)" class="house_icon">中标</a>
+        <a ng-click="select('淘汰公司', ac)" class="house_icon"> 淘汰</a>
+      </span>
+    </p>
+  </li>
+</ul>

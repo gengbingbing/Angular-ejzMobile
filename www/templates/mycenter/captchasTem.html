@@ -1,0 +1,17 @@
+<ion-modal-view ng-controller="captchasCtrl">
+  <ion-header-bar class="bar-positive02">
+    <h1 class="title" >输入验证码<a class="modalClose" ng-click="closeModal()">关闭</a></h1>
+  </ion-header-bar>
+
+<ion-content class="padding botm56" has-bouncing="false">
+  <div class="yzm_div">
+      <span class="yzm_span"> 我们已经发送了 <i>验证码 </i>到你的手机：</span>
+      <span class="yzm_tel">+86 <font ng-bind="user.telephone"></font></span>
+      <label class="item item-input ">
+        <input type="text" placeholder="输入验证码" ng-model="user.validcode" maxlength="6">
+      </label>
+  </div>
+      <a class="button button-block button-positive02" ng-click="sendNext()">下一步 </a>
+      <p class="fal_right">  <a href="#" class="zi">收不到验证码？</a></p>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,50 @@
+
+
+<div >
+  <div class="title2"><a class="title" >支付设计费及设计验收</a><a class="modalClose" ng-click="closeTemplate2()">关闭</a></div>
+  
+  <!-- <div  ng-show="showImage"> -->
+    <ion-slide-box>
+      <ion-slide  ng-repeat="item in imageInfo.works" style="width:100%;">
+        <div id="{{item.id}}">
+          <img ng-src="{{item.img}}" id="{{item.id}}" on-hold="savePhoto()" ion-pinch on-tap="hindImage()">
+        </div>
+      </ion-slide>
+    </ion-slide-box>
+  <!-- </div> -->
+
+  <a ng-click="acceptancePicture('平面图')">平面图</a>
+  <a ng-click="acceptancePicture('客厅图')">客厅</a>
+  <a ng-click="acceptancePicture('施工图')">施工</a>
+</div>
+
+
+<div class="des_intro padding">
+    <p>验收设计方案
+     </p>
+</div>  
+<div class="Progress_bar">
+        <span class="Progress_say">平面图</span><i class="Progress_round ion-checkmark-round "> </i><span class="Progress_tiao"></span>
+        <span class="Progress_say">平面图</span><i class="Progress_round ion-checkmark-round "> </i><span class="Progress_tiao"></span>
+        <!-- <span class="Progress_say">平面图</span><i class="Progress_round ion-checkmark-round "> </i><span class="Progress_tiao"></span> -->
+        <span class="Progress_say">平面图</span><i class="Progress_round ion-checkmark-round "> </i><span class="Progress_tiao"></span>
+        
+        <span class="Progress_say">平面图</span><i class="Progress_round ion-checkmark-round "> </i>
+</div>
+<!-- 装修及验收节点页面end -->
+  
+
+   <!-- 装修及验收节点页面 -->
+    <div class="l_img " ng-show="showText">
+          <div class="padding ">
+            <span class="font-size12" >请您先支付设计费到易家保安全账户，设计师方可为您完成全部设计并上传整套设计方案，待确认方案后再由易家保将设计费转给设计师。
+            </span>
+            <span class="pay" >
+              <p>房屋面积:{{postdata.HouseInfo.space || 0}}㎡(设计师已确认)    设计单价:{{postdata.HouseInfo.designCost || 0}}元/m²</p>
+              <p>设计费:{{postdata.HouseInfo.space || 0}} x {{postdata.HouseInfo.designCost || 0}} = {{postdata.HouseInfo.space * postdata.HouseInfo.designCost}}元，您已成功付款！请耐心等待设计师上传设计方案。</p>
+            </span>
+          </div>
+    </div>
+
+</ion-view>
+

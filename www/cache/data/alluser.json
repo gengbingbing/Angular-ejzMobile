@@ -1,0 +1,382 @@
+[
+{
+"username" : "admin",
+"password" : "123456",
+"realname" : "业主A",
+"logo":"业主",
+"sex" : "男",
+"photo" : "cache/img/005.jpg",
+"address" : "±®ÁÖÇø»ÆÑã´å",
+"area" : "ÉÂÎ÷Ê¡ Î÷°²ÊÐ",
+"url" : "http://www.yijiazhuang.cn/Designer/index.shtml",
+"position" : {"lng" : "108.891124", "lat" : "34.254642"},
+"group_id" : "1",
+"url" : "http://www.yijiazhuang.cn/Designer/index.shtml",
+"bidder" : {
+	"id" : 1,
+	"room" : {
+			"txt" : "Æ½²ã",
+			"val" : 0
+		},
+	"decorateBuyType" : {
+			"txt" : "°ë°ü",
+			"val" : 0
+		},
+	"decorateType" : {
+			"txt" : "×ÔÖú×°ÐÞ",
+			"val" : 3
+		},
+	"units" : {
+			"txt" : "Ò»ÊÒÒ»Ìü",
+			"val" : 0
+		},
+	"decorateStyle" : {
+			"txt" : "Å·Ê½",
+			"val" : 0
+		},
+	"budget" : {
+			"txt" : "Ð¡ÓÚ5Íò",
+			"val" : 0
+		},
+	"situation" : {
+			"txt" : "Ã«Å÷ÐÂ·¿",
+			"val" : 0
+		}
+
+	}
+},
+{
+"username" : "desginer1",
+"password" : "123456",
+"realname" : "业主F",
+"logo":"业主",
+"sex" : "男",
+"photo" : "cache/img/005.jpg",
+"address" : "±®ÁÖÇø»ÆÑã´å",
+"area" : "ÉÂÎ÷Ê¡ Î÷°²ÊÐ", 
+"url" : "http://www.yijiazhuang.cn/Designer/index.shtml",
+"position" : {"lng" : "108.91442", "lat" : "34.24492"},
+"group_id" : "1",
+"url" : "http://www.yijiazhuang.cn/Designer/index.shtml",
+"bidder" : {
+	"id" : 1,
+	"room" : {
+			"txt" : "Æ½²ã",
+			"val" : 0
+		},
+	"decorateBuyType" : {
+			"txt" : "°ë°ü",
+			"val" : 0
+		},
+	"decorateType" : {
+			"txt" : "×ÔÖú×°ÐÞ",
+			"val" : 3
+		},
+	"units" : {
+			"txt" : "Ò»ÊÒÒ»Ìü",
+			"val" : 0
+		},
+	"decorateStyle" : {
+			"txt" : "Å·Ê½",
+			"val" : 0
+		},
+	"budget" : {
+			"txt" : "Ð¡ÓÚ5Íò",
+			"val" : 0
+		},
+	"situation" : {
+			"txt" : "Ã«Å÷ÐÂ·¿",
+			"val" : 0
+		}
+
+	}
+},
+{
+"username" : "yezhu",
+"password" : "123456",
+"realname" : "业主B",
+"logo":"业主",
+"sex" : "男",
+"photo" : "cache/img/007.jpg",
+"address" : "±®ÁÖÇøÐ¡ÑãËþ",
+"area" : "ÉÂÎ÷Ê¡ Î÷°²ÊÐ",
+"url" : "http://www.yijiazhuang.cn/Designer/index.shtml",
+"position" : {"lng" : "108.875124", "lat" : "34.252642"},
+"group_id" : "1",
+"url" : "",
+"bidder" : {
+	"id" : 2,
+	"room" : {
+			"txt" : "±ðÊû",
+			"val" : 3
+		},
+	"decorateBuyType" : {
+			"txt" : "È«°ü",
+			"val" : 1
+		},
+	"decorateType" : {
+			"txt" : "ÆäËû×°ÐÞ",
+			"val" : 4
+		},
+	"units" : {
+			"txt" : "ÈýÊÒÁ½Ìü",
+			"val" : 4
+		},
+	"decorateStyle" : {
+			"txt" : "ÏÖ´ú",
+			"val" : 6
+		},
+	"budget" : {
+			"txt" : "20Íò",
+			"val" : 2
+		},
+	"situation" : {
+			"txt" : "Ã«Å÷ÐÂ·¿",
+			"val" : 0
+		}
+	}
+},
+{
+"username" : "yezhu123",
+"password" : "123456",
+"realname" : "业主C",
+"logo":"业主",
+"sex" : "女",
+"photo" : "cache/img/006.jpg",
+"address" : "ÑãËþÇø ¸ßÐÂÂ·",
+"area" : "ÉÂÎ÷Ê¡ Î÷°²ÊÐ",
+"url" : "http://www.yijiazhuang.cn/Designer/index.shtml",
+"position" : {"lng" : "108.896124", "lat" : "34.254342"},
+"group_id" : "1",
+"url" : "http://www.yijiazhuang.cn/Designer/index.shtml",
+"bidder" : {
+	"id" : 3,
+	"room" : {
+			"txt" : "Ô¾²ã",
+			"val" : 1
+		},
+	"decorateBuyType" : {
+			"txt" : "ÀÁÈË±ê",
+			"val" : 2
+		},
+	"decorateType" : {
+			"txt" : "×âÁÞ¼ò×°",
+			"val" : 2
+		},
+	"units" : {
+			"txt" : "Á½ÊÒÁ½Ìü",
+			"val" : 2
+		},
+	"decorateStyle" : {
+			"txt" : "ÖÐÊ½",
+			"val" : 2
+		},
+	"budget" : {
+			"txt" : "10Íò",
+			"val" : 1
+		},
+	"situation" : {
+			"txt" : "¾Ö²¿¸ÄÔì",
+			"val" : 2
+		}
+	}
+},
+{
+"username" : "jianli1",
+"password" : "123456",
+"realname" : "监理A",
+"logo":"监理",
+"age" : "33",
+"photo" : "cache/img/000.jpg",
+"url" : "http://www.baidu.com",
+"position" : {"lng" : "108.881114", "lat" : "34.244632"},
+"group_id" : "5"
+},
+{
+"username" : "jianli2",
+"password" : "123456",
+"realname" : "监理B",
+"logo":"监理",
+"age" : "45",
+"photo" : "cache/img/001.jpg",
+"url" : "http://www.hao123.com",
+"position" : {"lng" : "108.877316", "lat" : "34.232132"},
+"group_id" : "5"
+},
+{
+"username" : "jianli3",
+"password" : "123456",
+"realname" : "监理C",
+"logo":"监理",
+"age" : "40",
+"photo" : "cache/img/002.jpg",
+"url" : "http://www.github.com",
+"position" : {"lng" : "109.088972", "lat" : "34.224155"},
+"group_id" : "5"
+},
+{
+"username" : "jianli4",
+"password" : "123456",
+"realname" : "监理D",
+"logo":"监理",
+"age" : "36",
+"photo" : "cache/img/003.jpg",
+"url" : "http://www.jq22.com",
+"position" : {"lng" : "108.971114", "lat" : "34.212632"},
+"group_id" : "5"
+},
+{
+"username" : "jianli5",
+"password" : "123456",
+"realname" : "监理E",
+"logo":"监理",
+"age" : "32",
+"photo" : "cache/img/004.jpg",
+"url" : "http://www.jb51.net",
+"position" : {"lng" : "108.857594", "lat" : "34.203486"},
+"group_id" : "5"
+},
+{
+"username" : "shejishi1",
+"password" : "123456",
+"realname" : "设计师A",
+"logo":"设计师",
+"age" : "33",
+"photo" : "cache/img/000.jpg",
+"url" : "http://www.baidu.com",
+"position" : {"lng" : "108.86452", "lat" : "34.284456"},
+"group_id" : "4"
+},
+{
+"username" : "shejishi2",
+"password" : "123456",
+"realname" : "设计师B",
+"logo":"设计师",
+"age" : "45",
+"photo" : "cache/img/001.jpg",
+"url" : "http://www.hao123.com",
+"position" : {"lng" : "108.838452", "lat" : "34.292132"},
+"group_id" : "4"
+},
+{
+"username" : "shejishi3",
+"password" : "123456",
+"realname" : "设计师C",
+"logo":"设计师",
+"age" : "40",
+"photo" : "cache/img/002.jpg",
+"url" : "http://www.github.com",
+"position" : {"lng" : "109.028972", "lat" : "34.244155"},
+"group_id" : "4"
+},
+{
+"username" : "shejishi4",
+"password" : "123456",
+"realname" : "设计师D",
+"logo":"设计师",
+"age" : "36",
+"photo" : "cache/img/003.jpg",
+"url" : "http://www.jq22.com",
+"position" : {"lng" : "108.911114", "lat" : "34.252632"},
+"group_id" : "4"
+},
+{
+"username" : "shejishi5",
+"password" : "123456",
+"realname" : "设计师E",
+"logo":"设计师",
+"age" : "32",
+"photo" : "cache/img/004.jpg",
+"url" : "http://www.jb51.net",
+"position" : {"lng" : "108.801114", "lat" : "34.224132"},
+"group_id" : "4"
+},
+{
+"username" : "gongsi1",
+"password" : "123456",
+"realname" : "装修公司A",
+"logo":"装修公司",
+"age" : "33",
+"photo" : "cache/img/000.jpg",
+"url" : "http://www.baidu.com",
+"position" : {"lng" : "108.811114", "lat" : "34.204632"},
+"group_id" : "2"
+},
+{
+"username" : "gongsi2",
+"password" : "123456",
+"realname" : "装修公司B",
+"logo":"装修公司",
+"age" : "45",
+"photo" : "cache/img/001.jpg",
+"url" : "http://www.hao123.com",
+"position" : {"lng" : "108.837316", "lat" : "34.232132"},
+"group_id" : "2"
+},
+{
+"username" : "gongsi3",
+"password" : "123456",
+"realname" : "装修公司C",
+"logo":"装修公司",
+"age" : "40",
+"photo" : "cache/img/002.jpg",
+"url" : "http://www.github.com",
+"position" : {"lng" : "109.058972", "lat" : "34.264155"},
+"group_id" : "2"
+},
+{
+"username" : "gongsi4",
+"password" : "123456",
+"realname" : "装修公司D",
+"logo":"装修公司",
+"age" : "36",
+"photo" : "cache/img/003.jpg",
+"url" : "http://www.jq22.com",
+"position" : {"lng" : "108.971114", "lat" : "34.292632"},
+"group_id" : "2"
+},
+{
+"username" : "gongsi5",
+"password" : "123456",
+"realname" : "装修公司E",
+"logo":"装修公司",
+"age" : "32",
+"photo" : "cache/img/004.jpg",
+"url" : "http://www.jb51.net",
+"position" : {"lng" : "108.891114", "lat" : "34.324132"},
+"group_id" : "2"
+},
+{
+"username" : "shangjia1",
+"password" : "123456",
+"realname" : "商家A",
+"logo":"商家",
+"age" : "33",
+"photo" : "cache/img/000.jpg",
+"url" : "http://www.baidu.com",
+"position" : {"lng" : "108.881114", "lat" : "34.254632"},
+"group_id" : "3"
+},
+{
+"username" : "shangjia2",
+"password" : "123456",
+"realname" : "商家B",
+"logo":"商家",
+"age" : "45",
+"photo" : "cache/img/001.jpg",
+"url" : "http://www.hao123.com",
+"position" : {"lng" : "108.857316", "lat" : "34.272132"},
+"group_id" : "3"
+},
+{
+"username" : "shangjia3",
+"password" : "123456",
+"realname" : "商家C",
+"logo":"商家",
+"age" : "40",
+"photo" : "cache/img/002.jpg",
+"url" : "http://www.github.com",
+"position" : {"lng" : "109.028972", "lat" : "34.294155"},
+"group_id" : "3"
+}
+]

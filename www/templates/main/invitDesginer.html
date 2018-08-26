@@ -1,0 +1,64 @@
+<!--邀请设计师-->
+<!-- <ion-refresher
+  pulling-text="下拉刷新..."
+  on-refresh="doRefresh()">
+</ion-refresher> -->
+
+<ion-refresher pulling-text="刷新中......" on-refresh="vm.doRefresh()"></ion-refresher>
+<ion-slide >
+  <div class="title2"><a class="title" >邀请设计师</a></div>
+  <div class="padding ">
+    <!-- <ul class="seach_a">
+            <li><a ng-click="choice('初级设计师')" >初级设计师</a></li>
+            <li><a ng-click="choice('中级设计师')" >中级设计师</a></li>
+            <li><a ng-click="choice('高级设计师')" >高级设计师</a></li>
+            <li><a ng-click="choice('设计师评分')" class="a2">按评分</a></li>
+            <li><a ng-click="choice('设计师价格')" class="a2">按价格</a></li>
+            <li><a ng-click="choice('设计师热门')" class="a2">按热门</a></li>
+           </ul>  -->
+       <li class="item" ng-repeat="company in decorcompany | fuzzyBy : type : search | orderBy : expression " desginer2>
+           <a class="fal_left"><img src="{{company.img}}" class="person_photo_img02">
+           </a>
+           <p class="fal_left invit_information">
+              <span> 设计师: <i>{{company.name}}</i></span>
+              <span> 城市:<i> {{company.address}}</i></span>
+              <span> 工作经验：<i>{{company.time}} </i>年</span>
+           </p>
+       </li>
+     </ul>
+ </div>
+    <!-- ion-infinite-scroll 上拉加载数据指令 distance默认1% nf-if的值为false时，就禁止执行on-infinite  -->
+    <ion-infinite-scroll ng-if="!vm.moredata" on-infinite="vm.loadMore()" distance="3%" ></ion-infinite-scroll>
+ </ion-infinite-scroll>
+</ion-slide>
+
+<!-- <div class="search_right"> 
+           <ul class="seach_a">
+            <li><a ng-click="choice('初级设计师')" >初级设计师</a></li>
+            <li><a ng-click="choice('中级设计师')" >中级设计师</a></li>
+            <li><a ng-click="choice('高级设计师')" >高级设计师</a></li>
+            <li><a ng-click="choice('设计师评分')" class="a2">按评分</a></li>
+            <li><a ng-click="choice('设计师价格')" class="a2">按价格</a></li>
+            <li><a ng-click="choice('设计师热门')" class="a2">按热门</a></li>
+           </ul> 
+            <ul class="search_photo " ng-repeat="de in mapDesginer | fuzzyBy : type : search | orderBy : expression ">
+             <li class="padding"  >
+                 <a class="fal_left"><img src="{{de.photo}}" class="person_photo_img02">
+                 </a>
+                 <p class="fal_left sty" map>
+                  <span> 设计师: <i class="font-size16">{{de.realname}} </i></span>
+                  <span> 评分:<i>{{de.desginScore}}</i>级</span>
+                  <span> 擅长风格:<i>{{de.style}}</i></span>
+                  <span> 设计费用:<i>{{de.desginCost}}</span>
+                 </p>
+             </li>
+  </ul> 
+ </div>  -->
+
+
+
+
+
+
+
+

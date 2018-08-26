@@ -1,0 +1,230 @@
+[
+{
+"username" : "admin",
+"password" : "123456",
+"realname" : "业主A",
+"logo":"业主",
+"sex" : "男",
+"photo" : "cache/img/005.jpg",
+"address" : "±®ÁÖÇø»ÆÑã´å",
+"area" : "ÉÂÎ÷Ê¡ Î÷°²ÊÐ",
+"url" : "http://www.yijiazhuang.cn/Designer/index.shtml",
+"position" : {"lng" : "108.891124", "lat" : "34.254642"},
+"group_id" : "1",
+"url" : "http://www.yijiazhuang.cn/Designer/index.shtml",
+"bidder" : {
+	"id" : 1,
+	"room" : {
+			"txt" : "Æ½²ã",
+			"val" : 0
+		},
+	"decorateBuyType" : {
+			"txt" : "°ë°ü",
+			"val" : 0
+		},
+	"decorateType" : {
+			"txt" : "×ÔÖú×°ÐÞ",
+			"val" : 3
+		},
+	"units" : {
+			"txt" : "Ò»ÊÒÒ»Ìü",
+			"val" : 0
+		},
+	"decorateStyle" : {
+			"txt" : "Å·Ê½",
+			"val" : 0
+		},
+	"budget" : {
+			"txt" : "Ð¡ÓÚ5Íò",
+			"val" : 0
+		},
+	"situation" : {
+			"txt" : "Ã«Å÷ÐÂ·¿",
+			"val" : 0
+		}
+
+	}
+},
+{
+"username" : "desginer1",
+"password" : "123456",
+"realname" : "业主F",
+"logo":"业主",
+"sex" : "男",
+"photo" : "cache/img/005.jpg",
+"address" : "±®ÁÖÇø»ÆÑã´å",
+"area" : "ÉÂÎ÷Ê¡ Î÷°²ÊÐ", 
+"url" : "http://www.yijiazhuang.cn/Designer/index.shtml",
+"position" : {"lng" : "108.91442 ", "lat" : "34.24492"},
+"group_id" : "1",
+"url" : "http://www.yijiazhuang.cn/Designer/index.shtml",
+"bidder" : {
+	"id" : 1,
+	"room" : {
+			"txt" : "Æ½²ã",
+			"val" : 0
+		},
+	"decorateBuyType" : {
+			"txt" : "°ë°ü",
+			"val" : 0
+		},
+	"decorateType" : {
+			"txt" : "×ÔÖú×°ÐÞ",
+			"val" : 3
+		},
+	"units" : {
+			"txt" : "Ò»ÊÒÒ»Ìü",
+			"val" : 0
+		},
+	"decorateStyle" : {
+			"txt" : "Å·Ê½",
+			"val" : 0
+		},
+	"budget" : {
+			"txt" : "Ð¡ÓÚ5Íò",
+			"val" : 0
+		},
+	"situation" : {
+			"txt" : "Ã«Å÷ÐÂ·¿",
+			"val" : 0
+		}
+
+	}
+},
+{
+"username" : "desginer3",
+"logo":"业主",
+"password" : "123456",
+"realname" : "业主A",
+"sex" : "男",
+"photo" : "cache/img/005.jpg",
+"address" : "±®ÁÖÇø»ÆÑã´å",
+"area" : "ÉÂÎ÷Ê¡ Î÷°²ÊÐ", 
+"url" : "http://www.yijiazhuang.cn/Designer/index.shtml",
+"position" : {"lng" : "103.91546 ", "lat" : "35.244532"},
+"group_id" : "1",
+"url" : "http://www.yijiazhuang.cn/Designer/index.shtml",
+"bidder" : {
+	"id" : 1,
+	"room" : {
+			"txt" : "Æ½²ã",
+			"val" : 0
+		},
+	"decorateBuyType" : {
+			"txt" : "°ë°ü",
+			"val" : 0
+		},
+	"decorateType" : {
+			"txt" : "×ÔÖú×°ÐÞ",
+			"val" : 3
+		},
+	"units" : {
+			"txt" : "Ò»ÊÒÒ»Ìü",
+			"val" : 0
+		},
+	"decorateStyle" : {
+			"txt" : "Å·Ê½",
+			"val" : 0
+		},
+	"budget" : {
+			"txt" : "Ð¡ÓÚ5Íò",
+			"val" : 0
+		},
+	"situation" : {
+			"txt" : "Ã«Å÷ÐÂ·¿",
+			"val" : 0
+		}
+
+	}
+},
+{
+"username" : "yezhu",
+"password" : "123456",
+"realname" : "业主B",
+"logo":"业主",
+"sex" : "男",
+"photo" : "cache/img/007.jpg",
+"address" : "±®ÁÖÇøÐ¡ÑãËþ",
+"area" : "ÉÂÎ÷Ê¡ Î÷°²ÊÐ",
+"url" : "http://www.yijiazhuang.cn/Designer/index.shtml",
+"position" : {"lng" : "108.875124", "lat" : "34.252642"},
+"group_id" : "1",
+"url" : "",
+"bidder" : {
+	"id" : 2,
+	"room" : {
+			"txt" : "±ðÊû",
+			"val" : 3
+		},
+	"decorateBuyType" : {
+			"txt" : "È«°ü",
+			"val" : 1
+		},
+	"decorateType" : {
+			"txt" : "ÆäËû×°ÐÞ",
+			"val" : 4
+		},
+	"units" : {
+			"txt" : "ÈýÊÒÁ½Ìü",
+			"val" : 4
+		},
+	"decorateStyle" : {
+			"txt" : "ÏÖ´ú",
+			"val" : 6
+		},
+	"budget" : {
+			"txt" : "20Íò",
+			"val" : 2
+		},
+	"situation" : {
+			"txt" : "Ã«Å÷ÐÂ·¿",
+			"val" : 0
+		}
+	}
+},
+{
+"username" : "yezhu123",
+"password" : "123456",
+"realname" : "业主C",
+"logo":"业主",
+"sex" : "女",
+"photo" : "cache/img/006.jpg",
+"address" : "ÑãËþÇø ¸ßÐÂÂ·",
+"area" : "ÉÂÎ÷Ê¡ Î÷°²ÊÐ",
+"url" : "http://www.yijiazhuang.cn/Designer/index.shtml",
+"position" : {"lng" : "108.896124", "lat" : "34.254342"},
+"group_id" : "1",
+"url" : "http://www.yijiazhuang.cn/Designer/index.shtml",
+"bidder" : {
+	"id" : 3,
+	"room" : {
+			"txt" : "Ô¾²ã",
+			"val" : 1
+		},
+	"decorateBuyType" : {
+			"txt" : "ÀÁÈË±ê",
+			"val" : 2
+		},
+	"decorateType" : {
+			"txt" : "×âÁÞ¼ò×°",
+			"val" : 2
+		},
+	"units" : {
+			"txt" : "Á½ÊÒÁ½Ìü",
+			"val" : 2
+		},
+	"decorateStyle" : {
+			"txt" : "ÖÐÊ½",
+			"val" : 2
+		},
+	"budget" : {
+			"txt" : "10Íò",
+			"val" : 1
+		},
+	"situation" : {
+			"txt" : "¾Ö²¿¸ÄÔì",
+			"val" : 2
+		}
+	}
+}
+]

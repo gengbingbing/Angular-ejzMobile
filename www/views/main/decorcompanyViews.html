@@ -1,0 +1,25 @@
+<ion-view view-title="邀请装修公司" ng-controller="decorcompanyCtrl"  ng-init="initData()">
+
+  <ion-nav-bar class="bar-positive">
+      <ion-nav-back-button class="button-icon ion-chevron-left"></ion-nav-back-button>
+  </ion-nav-bar> 
+  <ion-content class="botm56">
+    <!--个人信息主体-->
+  <div class="botm56 ">
+    
+     <ul class="list">
+          <li class="item" ng-repeat="company in decorcompany"> 
+              <a href="#/main/desgincenter" class="fal_left" ng-click="desginer()"><img src="{{company.img}}" class="person_photo_img02"></a>
+              <p class="fal_left invit_information" >
+                <span> 设计师: <i>{{company.name}}</i></span>
+                <span> 等级:<i> {{company.type}}</i></span>
+                <span> 从业经验：<i>{{company.time}} </i>年</span>
+              </p>
+<!--               <a href="" class="invit_icon">预约量房</a> -->
+          </li>
+     </ul>
+  </div>
+  </ion-content>
+  <ng-include src="'templates/public_bottom.html'"></ng-include>
+</ion-view>
+
